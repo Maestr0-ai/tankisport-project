@@ -1,0 +1,3165 @@
+{
+    "team_states": {
+        "15818": {
+            "name": "Metamorphosis",
+            "players": {
+                "52486": {
+                    "name": "kuroko",
+                    "wins": 0
+                },
+                "53470": {
+                    "name": "priority",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14834": {
+            "name": "Pepega",
+            "players": {
+                "53290": {
+                    "name": "tanker-4321",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15672": {
+            "name": "amore",
+            "players": {
+                "51346": {
+                    "name": "Mexico",
+                    "wins": 0
+                },
+                "54135": {
+                    "name": "Medellin",
+                    "wins": 0
+                },
+                "54136": {
+                    "name": "Combo",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15601": {
+            "name": "Emeralds",
+            "players": {
+                "53932": {
+                    "name": "standup",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15209": {
+            "name": "Treex",
+            "players": {
+                "53575": {
+                    "name": "The_fury_phoenix",
+                    "wins": 0
+                },
+                "53729": {
+                    "name": "Akso",
+                    "wins": 0
+                },
+                "54530": {
+                    "name": "Saltatory",
+                    "wins": 0
+                },
+                "54547": {
+                    "name": "OH_bE3_Problem",
+                    "wins": 0
+                },
+                "54575": {
+                    "name": "Airiu",
+                    "wins": 0
+                },
+                "54102": {
+                    "name": "ms.the_fury_phoenix",
+                    "wins": 0
+                },
+                "54268": {
+                    "name": "V1T1A",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15923": {
+            "name": "BT888",
+            "players": {
+                "53406": {
+                    "name": "REF01MGJIXJ1NPAJXVXO",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15204": {
+            "name": "sicilian defense",
+            "players": {
+                "53884": {
+                    "name": "konwekta",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15919": {
+            "name": "The Tryhards",
+            "players": {
+                "53654": {
+                    "name": "twista",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15846": {
+            "name": "Chill Vibe",
+            "players": {
+                "53114": {
+                    "name": "Gleb",
+                    "wins": 0
+                },
+                "53133": {
+                    "name": "yuu",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15932": {
+            "name": "KO",
+            "players": {
+                "53389": {
+                    "name": "Jack",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15783": {
+            "name": "Shiny Players",
+            "players": {
+                "54586": {
+                    "name": "Problemka",
+                    "wins": 0
+                },
+                "54594": {
+                    "name": "Wonky",
+                    "wins": 0
+                },
+                "54588": {
+                    "name": "www",
+                    "wins": 0
+                },
+                "54590": {
+                    "name": "1m4u7s3",
+                    "wins": 0
+                },
+                "54592": {
+                    "name": "CHEMPION",
+                    "wins": 0
+                },
+                "54587": {
+                    "name": "Carnage",
+                    "wins": 0
+                },
+                "54600": {
+                    "name": "rllyEasy",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15917": {
+            "name": "Skufyata",
+            "players": {
+                "54042": {
+                    "name": "LittleHope",
+                    "wins": 0
+                },
+                "54119": {
+                    "name": "New-6aM6yk",
+                    "wins": 0
+                },
+                "54508": {
+                    "name": "Ctrl",
+                    "wins": 0
+                },
+                "54509": {
+                    "name": "TheClownLaughs",
+                    "wins": 0
+                },
+                "54561": {
+                    "name": "Almost",
+                    "wins": 0
+                },
+                "54468": {
+                    "name": "Unlock",
+                    "wins": 0
+                },
+                "54515": {
+                    "name": "minazuki",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15854": {
+            "name": "Ascend",
+            "players": {
+                "53238": {
+                    "name": "Bibon",
+                    "wins": 0
+                },
+                "53115": {
+                    "name": "Wlbeout",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15702": {
+            "name": "lizards",
+            "players": {
+                "54550": {
+                    "name": "blondinochka",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14286": {
+            "name": "Cruels",
+            "players": {
+                "52915": {
+                    "name": "illegale",
+                    "wins": 0
+                },
+                "53972": {
+                    "name": "Privileged",
+                    "wins": 0
+                },
+                "52904": {
+                    "name": "Heist",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "11093": {
+            "name": "Friends",
+            "players": {
+                "38046": {
+                    "name": "Rus",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15916": {
+            "name": "Breakout",
+            "players": {
+                "53222": {
+                    "name": "Trash",
+                    "wins": 0
+                },
+                "53251": {
+                    "name": "Papik",
+                    "wins": 0
+                },
+                "54134": {
+                    "name": "Language",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14679": {
+            "name": "saliro-moon17",
+            "players": {
+                "44630": {
+                    "name": "saliro-moon17",
+                    "wins": 0
+                },
+                "44658": {
+                    "name": "543212345",
+                    "wins": 0
+                },
+                "44661": {
+                    "name": "HWEG8",
+                    "wins": 0
+                },
+                "52232": {
+                    "name": "B.E.S.M.E.R.T.N.9",
+                    "wins": 0
+                },
+                "52270": {
+                    "name": "Kill_2.RTL",
+                    "wins": 0
+                },
+                "44695": {
+                    "name": "RENAMED_USER_lucky620_mfX33",
+                    "wins": 0
+                },
+                "44752": {
+                    "name": "RENAMED_USER_GUFik228_GxcKH",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15719": {
+            "name": "LUX",
+            "players": {
+                "53689": {
+                    "name": "STAR.XP",
+                    "wins": 0
+                },
+                "54536": {
+                    "name": "Halimonchik",
+                    "wins": 0
+                },
+                "54327": {
+                    "name": "a_n_d_r_e_j",
+                    "wins": 0
+                },
+                "54526": {
+                    "name": "Finessed",
+                    "wins": 0
+                },
+                "54534": {
+                    "name": "H.A.L.K",
+                    "wins": 0
+                },
+                "54537": {
+                    "name": "84.nba",
+                    "wins": 0
+                },
+                "54545": {
+                    "name": "FakTu4ecku_C4acTJLuB",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14062": {
+            "name": "Syuzanna18",
+            "players": {
+                "42491": {
+                    "name": "syuzanna18",
+                    "wins": 0
+                },
+                "51158": {
+                    "name": "Blower",
+                    "wins": 0
+                },
+                "44782": {
+                    "name": "RENAMED_USER_Mr.Felipe_jbkDK",
+                    "wins": 0
+                },
+                "44790": {
+                    "name": "r_preparat4",
+                    "wins": 0
+                },
+                "44894": {
+                    "name": "RENAMED_USER_Michael_T_WYwkW",
+                    "wins": 0
+                },
+                "48412": {
+                    "name": "pak_warior",
+                    "wins": 0
+                },
+                "51086": {
+                    "name": "Nightwarrior56",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14357": {
+            "name": "Team Angel",
+            "players": {
+                "43465": {
+                    "name": "mectb_jerryyy.yt",
+                    "wins": 0
+                },
+                "43516": {
+                    "name": "tolik904",
+                    "wins": 0
+                },
+                "43562": {
+                    "name": "mapjioy",
+                    "wins": 0
+                },
+                "43617": {
+                    "name": "tatulzver",
+                    "wins": 0
+                },
+                "43634": {
+                    "name": "hichico",
+                    "wins": 0
+                },
+                "43618": {
+                    "name": "WarriorLuty",
+                    "wins": 0
+                },
+                "43624": {
+                    "name": "RENAMED_USER_bog_ti_moi_karol_apaCV",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15886": {
+            "name": "LordKeltuzad",
+            "players": {
+                "52973": {
+                    "name": "Mr_KRYLLITEIb_KOROIb",
+                    "wins": 0
+                },
+                "54346": {
+                    "name": "Aramify_yt",
+                    "wins": 0
+                },
+                "52993": {
+                    "name": "Mr.Railgun",
+                    "wins": 0
+                },
+                "53174": {
+                    "name": "reconnect",
+                    "wins": 0
+                },
+                "54040": {
+                    "name": "IvanKvashnin",
+                    "wins": 0
+                },
+                "53172": {
+                    "name": "Arm3",
+                    "wins": 0
+                },
+                "54226": {
+                    "name": "AST_GOLD2009",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15525": {
+            "name": "CRISIS",
+            "players": {
+                "50039": {
+                    "name": "MR.CRISIS",
+                    "wins": 0
+                },
+                "50266": {
+                    "name": "Assassination",
+                    "wins": 0
+                },
+                "50226": {
+                    "name": "SENCER",
+                    "wins": 0
+                },
+                "50421": {
+                    "name": "ifkabir",
+                    "wins": 0
+                },
+                "50455": {
+                    "name": "SENCER_unbeatable",
+                    "wins": 0
+                },
+                "50176": {
+                    "name": "131015morita.sj",
+                    "wins": 0
+                },
+                "50260": {
+                    "name": "nidystark",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15703": {
+            "name": "Mangos",
+            "players": {
+                "51599": {
+                    "name": "snipersfreind",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15819": {
+            "name": "TEAM POWER PUFF",
+            "players": {
+                "52610": {
+                    "name": "Midoo2025",
+                    "wins": 0
+                },
+                "52684": {
+                    "name": "ALDRIN-COCKROACH-AHH",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15941": {
+            "name": "Liza.Super.Star",
+            "players": {
+                "53453": {
+                    "name": "pink",
+                    "wins": 0
+                },
+                "54173": {
+                    "name": "DAMA",
+                    "wins": 0
+                },
+                "54174": {
+                    "name": "Hokage",
+                    "wins": 0
+                },
+                "53452": {
+                    "name": "ridding",
+                    "wins": 0
+                },
+                "53456": {
+                    "name": "kardinal",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "12945": {
+            "name": "live is life",
+            "players": {
+                "54392": {
+                    "name": "Temik",
+                    "wins": 0
+                },
+                "54393": {
+                    "name": "sotnikovvanya",
+                    "wins": 0
+                },
+                "54395": {
+                    "name": "Shiya",
+                    "wins": 0
+                },
+                "54426": {
+                    "name": "blindzone",
+                    "wins": 0
+                },
+                "54488": {
+                    "name": "30fps",
+                    "wins": 0
+                },
+                "54394": {
+                    "name": "Muzzochka",
+                    "wins": 0
+                },
+                "54500": {
+                    "name": "Tema",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15401": {
+            "name": "morph",
+            "players": {
+                "52456": {
+                    "name": "buiatik",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15745": {
+            "name": "1000 PING",
+            "players": {
+                "54593": {
+                    "name": "Mysterion",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15330": {
+            "name": "TM",
+            "players": {
+                "54512": {
+                    "name": "lmpuise",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15834": {
+            "name": "Falcons prime",
+            "players": {
+                "52886": {
+                    "name": "Need.Me",
+                    "wins": 0
+                },
+                "52929": {
+                    "name": "II_GLAD1ATOR_II",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15320": {
+            "name": "asdasdsa",
+            "players": {
+                "54538": {
+                    "name": "Player_1_1",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15504": {
+            "name": "Lovesick",
+            "players": {
+                "53083": {
+                    "name": "Tosha",
+                    "wins": 0
+                },
+                "54005": {
+                    "name": "Sarat",
+                    "wins": 0
+                },
+                "52768": {
+                    "name": "Storm",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15786": {
+            "name": "VEGA",
+            "players": {
+                "53595": {
+                    "name": "Moody",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15524": {
+            "name": "JUNIOR",
+            "players": {
+                "52846": {
+                    "name": "Rustle_of_Leaves",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15107": {
+            "name": "Palestinians",
+            "players": {
+                "51520": {
+                    "name": "S-U-LT-A-N",
+                    "wins": 0
+                },
+                "51498": {
+                    "name": "Princess.Floress",
+                    "wins": 0
+                },
+                "51815": {
+                    "name": "Free_Palestinians",
+                    "wins": 0
+                },
+                "51835": {
+                    "name": "Onlyone",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15772": {
+            "name": "M0N0LITH",
+            "players": {
+                "54106": {
+                    "name": "m.m.i",
+                    "wins": 0
+                },
+                "52106": {
+                    "name": "Didanushka",
+                    "wins": 0
+                },
+                "53561": {
+                    "name": "Self",
+                    "wins": 0
+                },
+                "54400": {
+                    "name": "Princess.Di",
+                    "wins": 0
+                },
+                "54436": {
+                    "name": "why",
+                    "wins": 0
+                },
+                "53764": {
+                    "name": "DEVO4KA",
+                    "wins": 0
+                },
+                "54366": {
+                    "name": "K0HCTAHTUH",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15963": {
+            "name": "Rmr 2",
+            "players": {
+                "53655": {
+                    "name": "ayu",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15284": {
+            "name": "Winter Team",
+            "players": {
+                "48323": {
+                    "name": "Arcade",
+                    "wins": 0
+                },
+                "48743": {
+                    "name": "Masterpixel",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15793": {
+            "name": "DEKMA",
+            "players": {
+                "53629": {
+                    "name": "FROSTI_174",
+                    "wins": 0
+                },
+                "53643": {
+                    "name": "Dark_knight36",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15035": {
+            "name": "Visible",
+            "players": {
+                "46656": {
+                    "name": "Four",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "13683": {
+            "name": "The Dreamers",
+            "players": {
+                "48326": {
+                    "name": "Ann",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15891": {
+            "name": "Resevenge",
+            "players": {
+                "53011": {
+                    "name": "Veliona",
+                    "wins": 0
+                },
+                "53006": {
+                    "name": "TheAggressor",
+                    "wins": 0
+                },
+                "53327": {
+                    "name": "dissocial.desorder",
+                    "wins": 0
+                },
+                "54007": {
+                    "name": "Night.Fox",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15267": {
+            "name": "yin yang",
+            "players": {
+                "51818": {
+                    "name": "Marise",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15698": {
+            "name": "HORSES",
+            "players": {
+                "51542": {
+                    "name": "mr.boostrix",
+                    "wins": 0
+                },
+                "51985": {
+                    "name": "curl",
+                    "wins": 0
+                },
+                "51618": {
+                    "name": "l.DHD.l",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15520": {
+            "name": "ROCK-N-ROLL",
+            "players": {
+                "51986": {
+                    "name": "these",
+                    "wins": 0
+                },
+                "51385": {
+                    "name": "misunderstand",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14727": {
+            "name": "Tokyo",
+            "players": {
+                "51917": {
+                    "name": "Alter",
+                    "wins": 0
+                },
+                "51241": {
+                    "name": "AXV",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14821": {
+            "name": "Dendy",
+            "players": {
+                "49144": {
+                    "name": "Milky_Way",
+                    "wins": 0
+                },
+                "48780": {
+                    "name": "ZiKo",
+                    "wins": 0
+                },
+                "49208": {
+                    "name": "M_o_S_h_E_y_N_IT_s_A",
+                    "wins": 0
+                },
+                "45444": {
+                    "name": "A_R_M_A_G_E_D_D_O_N",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15369": {
+            "name": "nazovi kak xo4esh",
+            "players": {
+                "51615": {
+                    "name": "Revel",
+                    "wins": 0
+                },
+                "50480": {
+                    "name": "olchevita",
+                    "wins": 0
+                },
+                "51657": {
+                    "name": "semgrand",
+                    "wins": 0
+                },
+                "49719": {
+                    "name": "esse",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14434": {
+            "name": "VTB",
+            "players": {
+                "51639": {
+                    "name": "6a6ylllka",
+                    "wins": 0
+                },
+                "51210": {
+                    "name": "KoIIIaK-B-Kegax",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15367": {
+            "name": "TEAMP Junior",
+            "players": {
+                "49143": {
+                    "name": "4el",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15309": {
+            "name": "NOCHANCE",
+            "players": {
+                "49462": {
+                    "name": "IceBoy",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15276": {
+            "name": "Rubies",
+            "players": {
+                "48314": {
+                    "name": "leralera",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15404": {
+            "name": "TRiPSIDE",
+            "players": {
+                "51728": {
+                    "name": "Light",
+                    "wins": 0
+                },
+                "51977": {
+                    "name": "Vlone",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15477": {
+            "name": "HELP",
+            "players": {
+                "54118": {
+                    "name": "Devise",
+                    "wins": 0
+                },
+                "54126": {
+                    "name": "Arcane",
+                    "wins": 0
+                },
+                "49671": {
+                    "name": "Vestas",
+                    "wins": 0
+                },
+                "53193": {
+                    "name": "attentivement",
+                    "wins": 0
+                },
+                "54355": {
+                    "name": "Quo",
+                    "wins": 0
+                },
+                "53194": {
+                    "name": "Print",
+                    "wins": 0
+                },
+                "54375": {
+                    "name": "8-BIT",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15693": {
+            "name": "rvns",
+            "players": {
+                "53269": {
+                    "name": "Majoriks",
+                    "wins": 0
+                },
+                "53272": {
+                    "name": "Moby",
+                    "wins": 0
+                },
+                "52348": {
+                    "name": "More",
+                    "wins": 0
+                },
+                "51833": {
+                    "name": "Paranoia",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14576": {
+            "name": "Red Notice",
+            "players": {
+                "53888": {
+                    "name": "9mice",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "11389": {
+            "name": "Revolutionary",
+            "players": {
+                "52881": {
+                    "name": "tie",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15481": {
+            "name": "Default",
+            "players": {
+                "54132": {
+                    "name": "Medalier",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15024": {
+            "name": "undervalued",
+            "players": {
+                "52219": {
+                    "name": "Trauma",
+                    "wins": 0
+                },
+                "53525": {
+                    "name": "Unravel",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15668": {
+            "name": "NON  STOP",
+            "players": {
+                "53423": {
+                    "name": "ku_ku_la_la-konwekta",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15674": {
+            "name": "Benditos",
+            "players": {
+                "51922": {
+                    "name": "Iglesias",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15055": {
+            "name": "STB",
+            "players": {
+                "51656": {
+                    "name": "False",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15317": {
+            "name": "Deviants",
+            "players": {
+                "54539": {
+                    "name": "Jonas",
+                    "wins": 0
+                },
+                "54573": {
+                    "name": "Hot",
+                    "wins": 0
+                },
+                "54540": {
+                    "name": "PressF",
+                    "wins": 0
+                },
+                "54543": {
+                    "name": "polusik",
+                    "wins": 0
+                },
+                "54546": {
+                    "name": "fff",
+                    "wins": 0
+                },
+                "54552": {
+                    "name": "Acttion",
+                    "wins": 0
+                },
+                "54572": {
+                    "name": "Hell",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15814": {
+            "name": "ytku",
+            "players": {
+                "52409": {
+                    "name": "ot4e_nazes",
+                    "wins": 0
+                },
+                "52607": {
+                    "name": "6at9l",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15400": {
+            "name": "Frenzy",
+            "players": {
+                "53062": {
+                    "name": "Baiter",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15803": {
+            "name": "Rebels",
+            "players": {
+                "52694": {
+                    "name": "Hellyah",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14290": {
+            "name": "Diamonds",
+            "players": {
+                "52586": {
+                    "name": "EA7",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15316": {
+            "name": "Aurora",
+            "players": {
+                "52758": {
+                    "name": "Reason",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "13100": {
+            "name": "punishment",
+            "players": {
+                "52747": {
+                    "name": "Alsar",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15778": {
+            "name": "Homicide",
+            "players": {
+                "52744": {
+                    "name": "Dostoevsky_X",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14978": {
+            "name": "Hot ice",
+            "players": {
+                "49413": {
+                    "name": "metromoskva",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15806": {
+            "name": "Waifu",
+            "players": {
+                "54192": {
+                    "name": "skailain-nissan",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15382": {
+            "name": "Homies",
+            "players": {
+                "54280": {
+                    "name": "whyyousobeautiful",
+                    "wins": 0
+                },
+                "54559": {
+                    "name": "New",
+                    "wins": 0
+                },
+                "54557": {
+                    "name": "xia",
+                    "wins": 0
+                },
+                "54558": {
+                    "name": "Hikki",
+                    "wins": 0
+                },
+                "54560": {
+                    "name": "Control",
+                    "wins": 0
+                },
+                "53860": {
+                    "name": "Always",
+                    "wins": 0
+                },
+                "54363": {
+                    "name": "Normative",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15548": {
+            "name": "VVS",
+            "players": {
+                "50663": {
+                    "name": "syke",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15506": {
+            "name": "Fierce",
+            "players": {
+                "52100": {
+                    "name": "DvaTankista12",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15201": {
+            "name": "Station",
+            "players": {
+                "51387": {
+                    "name": "Tex",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15496": {
+            "name": "Relaxers",
+            "players": {
+                "49773": {
+                    "name": "Squirtle",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15624": {
+            "name": "WHITE TOWERS",
+            "players": {
+                "54271": {
+                    "name": "eco",
+                    "wins": 0
+                },
+                "50994": {
+                    "name": "kortex",
+                    "wins": 0
+                },
+                "54326": {
+                    "name": "9_ZEK",
+                    "wins": 0
+                },
+                "54338": {
+                    "name": "bbbytovskiyy",
+                    "wins": 0
+                },
+                "54491": {
+                    "name": "Erro",
+                    "wins": 0
+                },
+                "54603": {
+                    "name": "Hikikomori",
+                    "wins": 0
+                },
+                "53253": {
+                    "name": "C_Jl_A_C_T_E_H_O_K",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15855": {
+            "name": "Passion",
+            "players": {
+                "52682": {
+                    "name": "Skapova",
+                    "wins": 0
+                },
+                "52707": {
+                    "name": "antisocial",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "8779": {
+            "name": "Team Pointers",
+            "players": {
+                "52662": {
+                    "name": "UnIucky",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15659": {
+            "name": "Potatoes",
+            "players": {},
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15370": {
+            "name": "cuties",
+            "players": {
+                "54301": {
+                    "name": "IseedeadpeopIe",
+                    "wins": 0
+                },
+                "54128": {
+                    "name": "nikitka",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15094": {
+            "name": "Vexon",
+            "players": {
+                "47063": {
+                    "name": "truthseeker",
+                    "wins": 0
+                },
+                "53410": {
+                    "name": "Essentials",
+                    "wins": 0
+                },
+                "53411": {
+                    "name": "Essential",
+                    "wins": 0
+                },
+                "53460": {
+                    "name": "Ammar_123123",
+                    "wins": 0
+                },
+                "53461": {
+                    "name": "Sxnz",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15942": {
+            "name": "TOP STRIKERS",
+            "players": {
+                "53462": {
+                    "name": "Crypto",
+                    "wins": 0
+                },
+                "53476": {
+                    "name": "Afraid",
+                    "wins": 0
+                },
+                "53494": {
+                    "name": "Tissue",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15939": {
+            "name": "KUNG FU",
+            "players": {
+                "54340": {
+                    "name": "spoony",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15938": {
+            "name": "МОРС клюква",
+            "players": {
+                "53428": {
+                    "name": "NedoTap0k",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15858": {
+            "name": "Outcasts",
+            "players": {
+                "53152": {
+                    "name": "Alisha",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15920": {
+            "name": "One More Tіme",
+            "players": {
+                "54330": {
+                    "name": "Anytime",
+                    "wins": 0
+                },
+                "54362": {
+                    "name": "LUClFER",
+                    "wins": 0
+                },
+                "53296": {
+                    "name": "Sneaky",
+                    "wins": 0
+                },
+                "54474": {
+                    "name": "Immortal_HeRo_DoW",
+                    "wins": 0
+                },
+                "54516": {
+                    "name": "Fail",
+                    "wins": 0
+                },
+                "54371": {
+                    "name": "Snipe",
+                    "wins": 0
+                },
+                "54496": {
+                    "name": "Mr.skiil",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15925": {
+            "name": "APEX ELITE",
+            "players": {
+                "54373": {
+                    "name": "9l_TBO9l_JluCA",
+                    "wins": 0
+                },
+                "54386": {
+                    "name": "ShRaPNellY",
+                    "wins": 0
+                },
+                "54424": {
+                    "name": "roman12783",
+                    "wins": 0
+                },
+                "54503": {
+                    "name": "TROLL_BA",
+                    "wins": 0
+                },
+                "54574": {
+                    "name": "Sosedov",
+                    "wins": 0
+                },
+                "54372": {
+                    "name": "TbICJI4ELETUE",
+                    "wins": 0
+                },
+                "54568": {
+                    "name": "sufjwc_777",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15618": {
+            "name": "abyss",
+            "players": {
+                "51723": {
+                    "name": "m7-active",
+                    "wins": 0
+                },
+                "52098": {
+                    "name": "Agressor_56",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15014": {
+            "name": "Bloodline",
+            "players": {
+                "49520": {
+                    "name": "Liquid",
+                    "wins": 0
+                },
+                "51310": {
+                    "name": "Mert_Control",
+                    "wins": 0
+                },
+                "51372": {
+                    "name": "Rahx",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15664": {
+            "name": "Requiem",
+            "players": {
+                "51727": {
+                    "name": "V_3EBC",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15511": {
+            "name": "KITH",
+            "players": {
+                "51996": {
+                    "name": "vale",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15259": {
+            "name": "DO IT",
+            "players": {
+                "50233": {
+                    "name": "FFFs",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15493": {
+            "name": "Providence",
+            "players": {
+                "49890": {
+                    "name": "Dont",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15505": {
+            "name": "DISCIPLIN",
+            "players": {
+                "49829": {
+                    "name": "SelIer",
+                    "wins": 0
+                },
+                "49833": {
+                    "name": "Ne_T",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15474": {
+            "name": "Badecision",
+            "players": {
+                "51779": {
+                    "name": "Rip_flash_2020",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14993": {
+            "name": "ibusy",
+            "players": {
+                "46404": {
+                    "name": "Codya",
+                    "wins": 0
+                },
+                "50621": {
+                    "name": "Exezys",
+                    "wins": 0
+                },
+                "50590": {
+                    "name": "Opt",
+                    "wins": 0
+                },
+                "50620": {
+                    "name": "dumau",
+                    "wins": 0
+                },
+                "50623": {
+                    "name": "princess.tokyo",
+                    "wins": 0
+                },
+                "50624": {
+                    "name": "Pet",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15544": {
+            "name": "MX Team",
+            "players": {
+                "50111": {
+                    "name": "vinipyx84ili",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14985": {
+            "name": "FOXXX",
+            "players": {
+                "46366": {
+                    "name": "Mone",
+                    "wins": 0
+                },
+                "48292": {
+                    "name": "SCHIZZO",
+                    "wins": 0
+                },
+                "46414": {
+                    "name": "Nikita_Golovin",
+                    "wins": 0
+                },
+                "48648": {
+                    "name": "JekDenials_super",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15327": {
+            "name": "SINCERITY REUNION",
+            "players": {
+                "48543": {
+                    "name": "toro",
+                    "wins": 0
+                },
+                "48614": {
+                    "name": "strong",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15954": {
+            "name": "NonStandard Setup",
+            "players": {
+                "53859": {
+                    "name": "3.26",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15882": {
+            "name": "GGE5 Gaming",
+            "players": {
+                "52953": {
+                    "name": "meshoghost",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15885": {
+            "name": "TRM",
+            "players": {
+                "52972": {
+                    "name": "Sian",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15372": {
+            "name": "LPU",
+            "players": {
+                "48904": {
+                    "name": "Dedicated",
+                    "wins": 0
+                },
+                "49037": {
+                    "name": "wwe",
+                    "wins": 0
+                },
+                "49038": {
+                    "name": "sabi",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15887": {
+            "name": "dENCLAN",
+            "players": {
+                "52977": {
+                    "name": "Den44iK",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15889": {
+            "name": "Gangs",
+            "players": {
+                "52992": {
+                    "name": "Mini_Thor",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14865": {
+            "name": "Attic",
+            "players": {
+                "45791": {
+                    "name": "Mr.DEUS",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15122": {
+            "name": "Big duck club",
+            "players": {
+                "48498": {
+                    "name": "oro",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14098": {
+            "name": "Kings Of Tanks",
+            "players": {
+                "42591": {
+                    "name": "L_-100",
+                    "wins": 0
+                },
+                "42628": {
+                    "name": "r.3b",
+                    "wins": 0
+                },
+                "42704": {
+                    "name": "sec0ndchance",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "7525": {
+            "name": "Invincible",
+            "players": {
+                "31367": {
+                    "name": "Party",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14655": {
+            "name": "Cold",
+            "players": {
+                "44565": {
+                    "name": "Anne",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15635": {
+            "name": "BadTrip",
+            "players": {
+                "50991": {
+                    "name": "Shamlez",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "13318": {
+            "name": "Carnage Control",
+            "players": {
+                "50149": {
+                    "name": "Pree",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15816": {
+            "name": "Team Sot",
+            "players": {
+                "52379": {
+                    "name": "Sotnikavanya",
+                    "wins": 0
+                },
+                "52381": {
+                    "name": "vlad143",
+                    "wins": 0
+                },
+                "52380": {
+                    "name": "markus143",
+                    "wins": 0
+                },
+                "52382": {
+                    "name": "dmitriy55143",
+                    "wins": 0
+                },
+                "52384": {
+                    "name": "olchevita143",
+                    "wins": 0
+                },
+                "52383": {
+                    "name": "byter143",
+                    "wins": 0
+                },
+                "52385": {
+                    "name": "miss.xaos143",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14291": {
+            "name": "With Love",
+            "players": {
+                "49571": {
+                    "name": "Auf",
+                    "wins": 0
+                },
+                "49850": {
+                    "name": "Duas",
+                    "wins": 0
+                },
+                "49867": {
+                    "name": "Joe.Cole",
+                    "wins": 0
+                },
+                "50030": {
+                    "name": "Criminale",
+                    "wins": 0
+                },
+                "50058": {
+                    "name": "Not.Yet",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15873": {
+            "name": "BlackSiemens",
+            "players": {
+                "52841": {
+                    "name": "Medan",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15125": {
+            "name": "NON-STOP",
+            "players": {
+                "54235": {
+                    "name": "Loading",
+                    "wins": 0
+                },
+                "54520": {
+                    "name": "Merakh",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15974": {
+            "name": "rYZEN",
+            "players": {
+                "53674": {
+                    "name": "Aqu",
+                    "wins": 0
+                },
+                "53682": {
+                    "name": "Sanguin",
+                    "wins": 0
+                },
+                "53686": {
+                    "name": "Satu",
+                    "wins": 0
+                },
+                "54013": {
+                    "name": "Defolt",
+                    "wins": 0
+                },
+                "54334": {
+                    "name": "Mose",
+                    "wins": 0
+                },
+                "53678": {
+                    "name": "Arlington",
+                    "wins": 0
+                },
+                "54584": {
+                    "name": "Diano4ka",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15303": {
+            "name": "PARD",
+            "players": {
+                "50014": {
+                    "name": "depersonalizacia",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15787": {
+            "name": "IVOXYGEN",
+            "players": {
+                "54471": {
+                    "name": "I_am_Icy",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15329": {
+            "name": "Ace of hearts",
+            "players": {
+                "50765": {
+                    "name": "AceOfHearts",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15877": {
+            "name": "SCRIPT",
+            "players": {
+                "54445": {
+                    "name": "How",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15976": {
+            "name": "FIRE FIGHTERS",
+            "players": {},
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15966": {
+            "name": "kiberkotiki",
+            "players": {
+                "53628": {
+                    "name": "777_QAZAQ_777",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15977": {
+            "name": "VIRGINIA TANKERS",
+            "players": {
+                "53704": {
+                    "name": "slay",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15892": {
+            "name": "Lipstick",
+            "players": {
+                "54265": {
+                    "name": "healters",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15983": {
+            "name": "explayers",
+            "players": {
+                "53778": {
+                    "name": "iCry",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15200": {
+            "name": "TuF",
+            "players": {
+                "52754": {
+                    "name": "AraB_AllieD_ForceS",
+                    "wins": 0
+                },
+                "54088": {
+                    "name": "someonejustsaid",
+                    "wins": 0
+                },
+                "54086": {
+                    "name": "Trippy",
+                    "wins": 0
+                },
+                "54087": {
+                    "name": "Acinonyx",
+                    "wins": 0
+                },
+                "54130": {
+                    "name": "Ayaa_Pro1",
+                    "wins": 0
+                },
+                "54138": {
+                    "name": "wolfson",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15890": {
+            "name": "zero style",
+            "players": {
+                "53005": {
+                    "name": "SeeWoo",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15378": {
+            "name": "tankis",
+            "players": {
+                "48932": {
+                    "name": "TOUAREG_V10b",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15883": {
+            "name": "saudi falcon",
+            "players": {
+                "52955": {
+                    "name": "KSA",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15627": {
+            "name": "BLUE CATS",
+            "players": {
+                "50980": {
+                    "name": "RENAMED_USER_Sting_YEA8a",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15878": {
+            "name": "VacTality",
+            "players": {
+                "53038": {
+                    "name": "Honey_Cookie",
+                    "wins": 0
+                },
+                "52941": {
+                    "name": "Aks0",
+                    "wins": 0
+                },
+                "53065": {
+                    "name": "paren_v_paname",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14084": {
+            "name": "Hydro",
+            "players": {
+                "44744": {
+                    "name": "dhali",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14850": {
+            "name": "STEPPE EAGLES",
+            "players": {
+                "45675": {
+                    "name": "panda038",
+                    "wins": 0
+                },
+                "45775": {
+                    "name": "Communist_PKKA",
+                    "wins": 0
+                },
+                "45779": {
+                    "name": "asfa4",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15987": {
+            "name": "Abra CA Dabra",
+            "players": {
+                "53791": {
+                    "name": "Bosna_bot",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15981": {
+            "name": "Suprize",
+            "players": {
+                "54213": {
+                    "name": "Cortisol",
+                    "wins": 0
+                },
+                "53863": {
+                    "name": "AlwaysKing",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14582": {
+            "name": "Team Immortal Hawks",
+            "players": {
+                "49566": {
+                    "name": "ElysiumLexicon",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15992": {
+            "name": "CNY",
+            "players": {
+                "53814": {
+                    "name": "CNY",
+                    "wins": 0
+                },
+                "53815": {
+                    "name": "Miracle.Fungus",
+                    "wins": 0
+                },
+                "53816": {
+                    "name": "teil",
+                    "wins": 0
+                },
+                "53819": {
+                    "name": "99xHF",
+                    "wins": 0
+                },
+                "53820": {
+                    "name": "Juvenile",
+                    "wins": 0
+                },
+                "53817": {
+                    "name": "h.r",
+                    "wins": 0
+                },
+                "53818": {
+                    "name": "TlP-Ben",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15993": {
+            "name": "ASDXD",
+            "players": {
+                "53830": {
+                    "name": "AVIEL8396",
+                    "wins": 0
+                },
+                "53836": {
+                    "name": "AMB47",
+                    "wins": 0
+                },
+                "53837": {
+                    "name": "GREN-BOYS05",
+                    "wins": 0
+                },
+                "53849": {
+                    "name": "bunnyj",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16043": {
+            "name": "Ocean",
+            "players": {
+                "54451": {
+                    "name": "Xxx_Zolotov_xxX",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15595": {
+            "name": "Junior Portugal",
+            "players": {
+                "50727": {
+                    "name": "YEKINDAR",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15995": {
+            "name": "SKYFALL",
+            "players": {},
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16000": {
+            "name": "black mirror",
+            "players": {
+                "54335": {
+                    "name": "duality_alphy_ctrl",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15985": {
+            "name": "Goida",
+            "players": {
+                "53748": {
+                    "name": "Progrev_Goev",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16001": {
+            "name": "Shadow Warriors",
+            "players": {
+                "53964": {
+                    "name": "ITS",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15964": {
+            "name": "Dragon chineses Aura",
+            "players": {
+                "53608": {
+                    "name": "ana.laura",
+                    "wins": 0
+                },
+                "53869": {
+                    "name": "15oz",
+                    "wins": 0
+                },
+                "53870": {
+                    "name": "A.y.N",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15997": {
+            "name": "MJOLNIR",
+            "players": {
+                "53868": {
+                    "name": "gatsby",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16003": {
+            "name": "Do Not Disturb",
+            "players": {},
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16005": {
+            "name": "Team Posejdon",
+            "players": {
+                "53969": {
+                    "name": "carraro5",
+                    "wins": 0
+                },
+                "53979": {
+                    "name": "pro777441",
+                    "wins": 0
+                },
+                "53971": {
+                    "name": "gatedfgf",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14044": {
+            "name": "Space Stars",
+            "players": {
+                "44800": {
+                    "name": "FixPak",
+                    "wins": 0
+                },
+                "54396": {
+                    "name": "nloxopowo",
+                    "wins": 0
+                },
+                "54397": {
+                    "name": "creat",
+                    "wins": 0
+                },
+                "54399": {
+                    "name": "AIexandr",
+                    "wins": 0
+                },
+                "54563": {
+                    "name": "Larem",
+                    "wins": 0
+                },
+                "53973": {
+                    "name": "MR.MANGO",
+                    "wins": 0
+                },
+                "54179": {
+                    "name": "koka-games",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16011": {
+            "name": "NoLife",
+            "players": {
+                "54012": {
+                    "name": "Riot",
+                    "wins": 0
+                },
+                "54028": {
+                    "name": "Deceased",
+                    "wins": 0
+                },
+                "54031": {
+                    "name": "Int",
+                    "wins": 0
+                },
+                "54032": {
+                    "name": "lll.Kaito.Shoma.lll",
+                    "wins": 0
+                },
+                "54034": {
+                    "name": "88x",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15896": {
+            "name": "Lunaris",
+            "players": {
+                "53158": {
+                    "name": "Velunaris",
+                    "wins": 0
+                },
+                "54071": {
+                    "name": "steelassassin",
+                    "wins": 0
+                },
+                "54073": {
+                    "name": "Malign",
+                    "wins": 0
+                },
+                "54091": {
+                    "name": "jiwoo",
+                    "wins": 0
+                },
+                "54092": {
+                    "name": "Shao",
+                    "wins": 0
+                },
+                "54072": {
+                    "name": "Glamira",
+                    "wins": 0
+                },
+                "54090": {
+                    "name": "ISRA",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16014": {
+            "name": "Voltedge",
+            "players": {
+                "54077": {
+                    "name": "EvgeshaXT",
+                    "wins": 0
+                },
+                "54120": {
+                    "name": "xPANIKAx",
+                    "wins": 0
+                },
+                "54127": {
+                    "name": "fokkus",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16031": {
+            "name": "No way",
+            "players": {
+                "54208": {
+                    "name": "2018",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14057": {
+            "name": "Claykneaders",
+            "players": {
+                "42477": {
+                    "name": "CKN_Tosha",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16042": {
+            "name": "I3IazeX",
+            "players": {
+                "54283": {
+                    "name": "YT_BEZYM4IK_YT",
+                    "wins": 0
+                },
+                "54285": {
+                    "name": "MarchelIo",
+                    "wins": 0
+                },
+                "54299": {
+                    "name": "eur186",
+                    "wins": 0
+                },
+                "54329": {
+                    "name": "SNIPER_NIKITOS",
+                    "wins": 0
+                },
+                "54382": {
+                    "name": "necessary",
+                    "wins": 0
+                },
+                "54282": {
+                    "name": "loltanks",
+                    "wins": 0
+                },
+                "54286": {
+                    "name": "ScoobyDoobyDoo",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16045": {
+            "name": "Brilliance",
+            "players": {
+                "54497": {
+                    "name": "masterplanner",
+                    "wins": 0
+                },
+                "54337": {
+                    "name": "yaara",
+                    "wins": 0
+                },
+                "54428": {
+                    "name": "myth",
+                    "wins": 0
+                },
+                "54475": {
+                    "name": "konvekTa",
+                    "wins": 0
+                },
+                "54533": {
+                    "name": "GG_reg",
+                    "wins": 0
+                },
+                "54446": {
+                    "name": "Mursal",
+                    "wins": 0
+                },
+                "54447": {
+                    "name": "300",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16044": {
+            "name": "CKN",
+            "players": {
+                "54312": {
+                    "name": "ToshaTXR",
+                    "wins": 0
+                },
+                "54313": {
+                    "name": "page",
+                    "wins": 0
+                },
+                "54314": {
+                    "name": "augmentum",
+                    "wins": 0
+                },
+                "54315": {
+                    "name": "Sadly",
+                    "wins": 0
+                },
+                "54332": {
+                    "name": "Kafka",
+                    "wins": 0
+                },
+                "54317": {
+                    "name": "143",
+                    "wins": 0
+                },
+                "54347": {
+                    "name": "vasiline",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16032": {
+            "name": "dezo",
+            "players": {
+                "54209": {
+                    "name": "X_Shtirlitz_X",
+                    "wins": 0
+                },
+                "54210": {
+                    "name": "TI.P.O.K.T.O.JI.O.r",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16046": {
+            "name": "Too many",
+            "players": {
+                "54352": {
+                    "name": "Resii",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14726": {
+            "name": "rengers",
+            "players": {
+                "54273": {
+                    "name": "I_love_Sone4ka",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16016": {
+            "name": "Arctic",
+            "players": {
+                "54276": {
+                    "name": "Spate",
+                    "wins": 0
+                },
+                "54181": {
+                    "name": "Sin-Eater",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16047": {
+            "name": "Red Dragons",
+            "players": {
+                "54364": {
+                    "name": "syl",
+                    "wins": 0
+                },
+                "54379": {
+                    "name": "NIRBAN_PRIME",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16048": {
+            "name": "Liquid team",
+            "players": {
+                "54376": {
+                    "name": "Pr1me",
+                    "wins": 0
+                },
+                "54377": {
+                    "name": "Steel_Sword",
+                    "wins": 0
+                },
+                "54387": {
+                    "name": "Arcade_eSports",
+                    "wins": 0
+                },
+                "54458": {
+                    "name": "YOUTUBE.AMG",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16050": {
+            "name": "ANTIHELP",
+            "players": {
+                "54420": {
+                    "name": "vivo",
+                    "wins": 0
+                },
+                "54523": {
+                    "name": "farawayfromexcellent",
+                    "wins": 0
+                },
+                "54404": {
+                    "name": "music",
+                    "wins": 0
+                },
+                "54522": {
+                    "name": "Rival",
+                    "wins": 0
+                },
+                "54541": {
+                    "name": "Eternal.Spring",
+                    "wins": 0
+                },
+                "54390": {
+                    "name": "Month",
+                    "wins": 0
+                },
+                "54440": {
+                    "name": "Xiko",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16062": {
+            "name": "Leopards",
+            "players": {
+                "54501": {
+                    "name": "Quu",
+                    "wins": 0
+                },
+                "54517": {
+                    "name": "6666",
+                    "wins": 0
+                },
+                "54518": {
+                    "name": "Herow",
+                    "wins": 0
+                },
+                "54524": {
+                    "name": "Musray",
+                    "wins": 0
+                },
+                "54566": {
+                    "name": "Alone",
+                    "wins": 0
+                },
+                "54502": {
+                    "name": "RedDeath",
+                    "wins": 0
+                },
+                "54519": {
+                    "name": "Gyft",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15808": {
+            "name": "deep ocean",
+            "players": {
+                "54401": {
+                    "name": "otc",
+                    "wins": 0
+                },
+                "54423": {
+                    "name": "Dirty",
+                    "wins": 0
+                },
+                "54444": {
+                    "name": "Ryxo",
+                    "wins": 0
+                },
+                "54549": {
+                    "name": "Mr.Artemka",
+                    "wins": 0
+                },
+                "54554": {
+                    "name": "Winn",
+                    "wins": 0
+                },
+                "54411": {
+                    "name": "Stun",
+                    "wins": 0
+                },
+                "54548": {
+                    "name": "Shoxy",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16054": {
+            "name": "Duck stories",
+            "players": {
+                "54419": {
+                    "name": "Hype",
+                    "wins": 0
+                },
+                "54437": {
+                    "name": "Blazer",
+                    "wins": 0
+                },
+                "54429": {
+                    "name": "Marquessa",
+                    "wins": 0
+                },
+                "54478": {
+                    "name": "Route",
+                    "wins": 0
+                },
+                "54562": {
+                    "name": "koxushima",
+                    "wins": 0
+                },
+                "54577": {
+                    "name": "Leader",
+                    "wins": 0
+                },
+                "54595": {
+                    "name": "XIX",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "11753": {
+            "name": "Infinity",
+            "players": {
+                "30464": {
+                    "name": "Regency",
+                    "wins": 0
+                },
+                "54431": {
+                    "name": "Canpolat",
+                    "wins": 0
+                },
+                "54433": {
+                    "name": "NikmanGT",
+                    "wins": 0
+                },
+                "54434": {
+                    "name": "AliCanDoThat",
+                    "wins": 0
+                },
+                "54494": {
+                    "name": "Narcissus",
+                    "wins": 0
+                },
+                "54507": {
+                    "name": "Dynasty",
+                    "wins": 0
+                },
+                "54596": {
+                    "name": "3dL",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "14892": {
+            "name": "Arm Tanks",
+            "players": {
+                "54460": {
+                    "name": "bonezmc",
+                    "wins": 0
+                },
+                "54461": {
+                    "name": "tijarist",
+                    "wins": 0
+                },
+                "54483": {
+                    "name": "mr.todd",
+                    "wins": 0
+                },
+                "54485": {
+                    "name": "DLHunt3r",
+                    "wins": 0
+                },
+                "54567": {
+                    "name": "Crazy.Weekend",
+                    "wins": 0
+                },
+                "54576": {
+                    "name": "Shaft.Dictator",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16056": {
+            "name": "Darcwolf",
+            "players": {
+                "54441": {
+                    "name": "DarcWolfBeast",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16063": {
+            "name": "EndGame",
+            "players": {
+                "54531": {
+                    "name": "soldierinduty",
+                    "wins": 0
+                },
+                "54597": {
+                    "name": "notification",
+                    "wins": 0
+                },
+                "54532": {
+                    "name": "Excelencia",
+                    "wins": 0
+                },
+                "54599": {
+                    "name": "sedge",
+                    "wins": 0
+                },
+                "54602": {
+                    "name": "Senate",
+                    "wins": 0
+                },
+                "54528": {
+                    "name": "Pros",
+                    "wins": 0
+                },
+                "54598": {
+                    "name": "Simpie",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16051": {
+            "name": "ANTARTICA",
+            "players": {
+                "54389": {
+                    "name": "troii",
+                    "wins": 0
+                },
+                "54578": {
+                    "name": "abdux",
+                    "wins": 0
+                },
+                "54579": {
+                    "name": "Blazing",
+                    "wins": 0
+                },
+                "54580": {
+                    "name": "yulan",
+                    "wins": 0
+                },
+                "54582": {
+                    "name": "High",
+                    "wins": 0
+                },
+                "54581": {
+                    "name": "Rare",
+                    "wins": 0
+                },
+                "54583": {
+                    "name": "ii.last.shot.ii",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "16052": {
+            "name": "Smoke",
+            "players": {
+                "54413": {
+                    "name": "223",
+                    "wins": 0
+                },
+                "54439": {
+                    "name": "Capital",
+                    "wins": 0
+                },
+                "54490": {
+                    "name": "Peruere",
+                    "wins": 0
+                },
+                "54513": {
+                    "name": "adventure",
+                    "wins": 0
+                },
+                "54555": {
+                    "name": "Oooo.ilyxa.m0nesy",
+                    "wins": 0
+                },
+                "54476": {
+                    "name": "Bacho",
+                    "wins": 0
+                },
+                "54498": {
+                    "name": "Scorn",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15999": {
+            "name": "Solar Arc",
+            "players": {
+                "53891": {
+                    "name": "Liqitation",
+                    "wins": 0
+                },
+                "54321": {
+                    "name": "Gloss",
+                    "wins": 0
+                },
+                "54322": {
+                    "name": "Movein",
+                    "wins": 0
+                },
+                "54486": {
+                    "name": "JIupuka",
+                    "wins": 0
+                },
+                "54564": {
+                    "name": "F1x",
+                    "wins": 0
+                },
+                "54438": {
+                    "name": "Darkness.In.Soul",
+                    "wins": 0
+                },
+                "54585": {
+                    "name": "Sociable",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15746": {
+            "name": "Bambi",
+            "players": {
+                "52038": {
+                    "name": "magik",
+                    "wins": 0
+                },
+                "54432": {
+                    "name": "noice",
+                    "wins": 0
+                },
+                "54427": {
+                    "name": "Marbella",
+                    "wins": 0
+                },
+                "54464": {
+                    "name": "q0.0p",
+                    "wins": 0
+                },
+                "54466": {
+                    "name": "bestia",
+                    "wins": 0
+                },
+                "54473": {
+                    "name": "Easter",
+                    "wins": 0
+                },
+                "54492": {
+                    "name": "Higo",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        },
+        "15494": {
+            "name": "Matrix",
+            "players": {
+                "49770": {
+                    "name": "Drunk",
+                    "wins": 0
+                }
+            },
+            "last_updated": "2026-01-27T00:41:20.046814+03:00"
+        }
+    },
+    "tournament_states": {
+        "842": {
+            "last_updated": "2026-01-27T00:30:28.061458+03:00",
+            "match_results": {
+                "1": [
+                    "⭐ **Shiny Players** (3) — Space Stars (0)",
+                    "⭐ Empty slot5 (0) — **One More Tіme** (1)",
+                    "⭐ Skufyata (1) — **Smoke** (3)",
+                    "⭐ **Deviants** (3) — ANTIHELP (0)",
+                    "⭐ Empty slot4 (0) — **live is life** (1)",
+                    "⭐ Empty slot3 (0) — **deep ocean** (1)",
+                    "⭐ Empty slot (0) — **Homies** (1)",
+                    "⭐ Empty slot2 (0) — **Leopards** (1)"
+                ]
+            },
+            "schedule": {
+                "1": [
+                    {
+                        "match_id": "112073",
+                        "time": "2026-01-27 20:00:00",
+                        "teams": {
+                            "team1_id": 11753,
+                            "team2_id": 16045
+                        },
+                        "detail": "🕗 20:00 — **Infinity** 🆚 **Brilliance**"
+                    },
+                    {
+                        "match_id": "112074",
+                        "time": "2026-01-27 20:00:00",
+                        "teams": {
+                            "team1_id": 16054,
+                            "team2_id": 15746
+                        },
+                        "detail": "🕗 20:00 — **Duck stories** 🆚 **Bambi**"
+                    },
+                    {
+                        "match_id": "112075",
+                        "time": "2026-01-27 20:00:00",
+                        "teams": {
+                            "team1_id": 15999,
+                            "team2_id": 15772
+                        },
+                        "detail": "🕗 20:00 — **Solar Arc** 🆚 **M0N0LITH**"
+                    },
+                    {
+                        "match_id": "112076",
+                        "time": "2026-01-27 20:00:00",
+                        "teams": {
+                            "team1_id": 15974,
+                            "team2_id": 16042
+                        },
+                        "detail": "🕗 20:00 — **rYZEN** 🆚 **I3IazeX**"
+                    },
+                    {
+                        "match_id": "112077",
+                        "time": "2026-01-27 21:00:00",
+                        "teams": {
+                            "team1_id": 16051,
+                            "team2_id": 15477
+                        },
+                        "detail": "🕗 21:00 — **ANTARTICA** 🆚 **HELP**"
+                    },
+                    {
+                        "match_id": "112078",
+                        "time": "2026-01-27 21:00:00",
+                        "teams": {
+                            "team1_id": 15719,
+                            "team2_id": 15886
+                        },
+                        "detail": "🕗 21:00 — **LUX** 🆚 **LordKeltuzad**"
+                    },
+                    {
+                        "match_id": "112079",
+                        "time": "2026-01-27 21:00:00",
+                        "teams": {
+                            "team1_id": 15209,
+                            "team2_id": 16044
+                        },
+                        "detail": "🕗 21:00 — **Treex** 🆚 **CKN**"
+                    },
+                    {
+                        "match_id": "112080",
+                        "time": "2026-01-27 21:00:00",
+                        "teams": {
+                            "team1_id": 15925,
+                            "team2_id": 16063
+                        },
+                        "detail": "🕗 21:00 — **APEX ELITE** 🆚 **EndGame**"
+                    }
+                ]
+            },
+            "notified_results": [
+                "112065",
+                "112068",
+                "112066",
+                "112067",
+                "112070",
+                "112071",
+                "112069",
+                "112072"
+            ],
+            "notified_rounds": [],
+            "notified_reminders": [],
+            "notified_start_notifications": [],
+            "notified_new_rounds": [],
+            "notified_new_matches": [
+                "112075",
+                "112079",
+                "112076",
+                "112080",
+                "112074",
+                "112078",
+                "112077",
+                "112073"
+            ]
+        }
+    }
+}

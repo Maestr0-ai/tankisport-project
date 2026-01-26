@@ -1,0 +1,5 @@
+requests
+discord.py
+aiohttp
+PyNaCl==1.5.0
+python-dotenv

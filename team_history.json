@@ -1,0 +1,380 @@
+{
+    "TEAM_MAPPING": {
+        "15818": "Metamorphosis",
+        "14834": "Pepega",
+        "15672": "amore",
+        "15601": "Emeralds",
+        "15209": "Treex",
+        "15923": "BT888",
+        "15204": "sicilian defense",
+        "15919": "The Tryhards",
+        "15846": "Chill Vibe",
+        "15932": "KO",
+        "15783": "Shiny Players",
+        "15917": "Skufyata",
+        "15854": "Ascend",
+        "15702": "lizards",
+        "14286": "Cruels",
+        "11093": "Friends",
+        "15916": "Breakout",
+        "14679": "saliro-moon17",
+        "15719": "LUX",
+        "14062": "Syuzanna18",
+        "14357": "Team Angel",
+        "15886": "LordKeltuzad",
+        "15525": "CRISIS",
+        "15703": "Mangos",
+        "15819": "TEAM POWER PUFF",
+        "15941": "Liza.Super.Star",
+        "12945": "live is life",
+        "15401": "morph",
+        "15745": "1000 PING",
+        "15330": "TM",
+        "15834": "Falcons prime",
+        "15320": "asdasdsa",
+        "15504": "Lovesick",
+        "15786": "VEGA",
+        "15524": "JUNIOR",
+        "15107": "Palestinians",
+        "15772": "M0N0LITH",
+        "15963": "Rmr 2",
+        "15284": "Winter Team",
+        "15793": "DEKMA",
+        "15035": "Visible",
+        "13683": "The Dreamers",
+        "15891": "Resevenge",
+        "15267": "yin yang",
+        "15698": "HORSES",
+        "15520": "ROCK-N-ROLL",
+        "14727": "Tokyo",
+        "14821": "Dendy",
+        "15369": "nazovi kak xo4esh",
+        "14434": "VTB",
+        "15367": "TEAMP Junior",
+        "15309": "NOCHANCE",
+        "15276": "Rubies",
+        "15404": "TRiPSIDE",
+        "15477": "HELP",
+        "15693": "rvns",
+        "14576": "Red Notice",
+        "11389": "Revolutionary",
+        "15481": "Default",
+        "15024": "undervalued",
+        "15668": "NON  STOP",
+        "15674": "Benditos",
+        "15055": "STB",
+        "15317": "Deviants",
+        "15814": "ytku",
+        "15400": "Frenzy",
+        "15803": "Rebels",
+        "14290": "Diamonds",
+        "15316": "Aurora",
+        "13100": "punishment",
+        "15778": "Homicide",
+        "14978": "Hot ice",
+        "15806": "Waifu",
+        "15382": "Homies",
+        "15548": "VVS",
+        "15506": "Fierce",
+        "15201": "Station",
+        "15496": "Relaxers",
+        "15624": "WHITE TOWERS",
+        "15855": "Passion",
+        "8779": "Team Pointers",
+        "15659": "Potatoes",
+        "15370": "cuties",
+        "15094": "Vexon",
+        "15942": "TOP STRIKERS",
+        "15939": "KUNG FU",
+        "15938": "МОРС клюква",
+        "15858": "Outcasts",
+        "15920": "One More Tіme",
+        "15925": "APEX ELITE",
+        "15618": "abyss",
+        "15014": "Bloodline",
+        "15664": "Requiem",
+        "15511": "KITH",
+        "15259": "DO IT",
+        "15493": "Providence",
+        "15505": "DISCIPLIN",
+        "15474": "Badecision",
+        "14993": "ibusy",
+        "15544": "MX Team",
+        "14985": "FOXXX",
+        "15327": "SINCERITY REUNION",
+        "15954": "NonStandard Setup",
+        "15882": "GGE5 Gaming",
+        "15885": "TRM",
+        "15372": "LPU",
+        "15887": "dENCLAN",
+        "15889": "Gangs",
+        "14865": "Attic",
+        "15122": "Big duck club",
+        "14098": "Kings Of Tanks",
+        "7525": "Invincible",
+        "14655": "Cold",
+        "15635": "BadTrip",
+        "13318": "Carnage Control",
+        "15816": "Team Sot",
+        "14291": "With Love",
+        "15873": "BlackSiemens",
+        "15125": "NON-STOP",
+        "15974": "rYZEN",
+        "15303": "PARD",
+        "15787": "IVOXYGEN",
+        "15329": "Ace of hearts",
+        "15877": "SCRIPT",
+        "15976": "FIRE FIGHTERS",
+        "15966": "kiberkotiki",
+        "15977": "VIRGINIA TANKERS",
+        "15892": "Lipstick",
+        "15983": "explayers",
+        "15200": "TuF",
+        "15890": "zero style",
+        "15378": "tankis",
+        "15883": "saudi falcon",
+        "15627": "BLUE CATS",
+        "15878": "VacTality",
+        "14084": "Hydro",
+        "14850": "STEPPE EAGLES",
+        "15987": "Abra CA Dabra",
+        "15981": "Suprize",
+        "14582": "Team Immortal Hawks",
+        "15992": "CNY",
+        "15993": "ASDXD",
+        "15988": "Unskilled",
+        "15595": "Junior Portugal",
+        "15995": "SKYFALL",
+        "16000": "black mirror",
+        "15985": "Goida",
+        "16001": "Shadow Warriors",
+        "15964": "Dragon chineses Aura",
+        "15997": "MJOLNIR",
+        "16003": "Do Not Disturb",
+        "16005": "Team Posejdon",
+        "15494": "Matrix",
+        "14044": "Space Stars",
+        "16011": "NoLife",
+        "15896": "Lunaris",
+        "16014": "Voltedge",
+        "16031": "No way",
+        "14057": "Claykneaders",
+        "16042": "I3IazeX",
+        "16043": "Ocean",
+        "16045": "Brilliance",
+        "16044": "CKN",
+        "16032": "dezo",
+        "16046": "Too many",
+        "14726": "rengers",
+        "16016": "Arctic",
+        "16047": "Red Dragons",
+        "16048": "Liquid team",
+        "16050": "ANTIHELP",
+        "16049": "OGs",
+        "15808": "deep ocean",
+        "16054": "Duck stories",
+        "11753": "Infinity",
+        "16062": "Leopards",
+        "14892": "Arm Tanks",
+        "16056": "Darcwolf",
+        "16063": "EndGame",
+        "16051": "ANTARTICA",
+        "16052": "Smoke",
+        "15999": "Solar Arc",
+        "15746": "Bambi"
+    },
+    "team_name_history": {
+        "16031": [
+            {
+                "name": "No way",
+                "changed_at": "2025-12-29T02:56:25.734439+03:00"
+            }
+        ],
+        "14057": [
+            {
+                "name": "Claykneaders",
+                "changed_at": "2026-01-02T14:58:07.332413+03:00"
+            }
+        ],
+        "16042": [
+            {
+                "name": "I3IazeX",
+                "changed_at": "2026-01-02T16:17:25.573086+03:00"
+            }
+        ],
+        "16003": [
+            {
+                "name": "One More Tіme",
+                "changed_at": "2026-01-03T01:37:50.724110+03:00"
+            },
+            {
+                "name": "Do Not Disturb",
+                "changed_at": "2026-01-06T13:43:36.759323+03:00"
+            }
+        ],
+        "16043": [
+            {
+                "name": "Crystal Seven",
+                "changed_at": "2026-01-03T23:07:36.742959+03:00"
+            },
+            {
+                "name": "Ocean",
+                "changed_at": "2026-01-10T15:18:38.885432+03:00"
+            }
+        ],
+        "15920": [
+            {
+                "name": "One More Tіme",
+                "changed_at": "2026-01-06T19:11:36.744394+03:00"
+            }
+        ],
+        "16045": [
+            {
+                "name": "Brilliance",
+                "changed_at": "2026-01-07T23:27:10.936285+03:00"
+            }
+        ],
+        "16044": [
+            {
+                "name": "CKN",
+                "changed_at": "2026-01-08T12:12:00.137018+03:00"
+            }
+        ],
+        "16032": [
+            {
+                "name": "dezo",
+                "changed_at": "2026-01-08T21:20:38.859434+03:00"
+            }
+        ],
+        "16046": [
+            {
+                "name": "Too many",
+                "changed_at": "2026-01-10T17:46:11.489730+03:00"
+            }
+        ],
+        "14726": [
+            {
+                "name": "rengers",
+                "changed_at": "2026-01-10T18:06:29.876613+03:00"
+            }
+        ],
+        "16016": [
+            {
+                "name": "Arctic",
+                "changed_at": "2026-01-10T18:43:50.639550+03:00"
+            }
+        ],
+        "16047": [
+            {
+                "name": "Red Dragons",
+                "changed_at": "2026-01-13T12:43:05.300973+03:00"
+            }
+        ],
+        "16048": [
+            {
+                "name": "Liquid team",
+                "changed_at": "2026-01-13T17:03:08.943108+03:00"
+            }
+        ],
+        "16050": [
+            {
+                "name": "NoHelp",
+                "changed_at": "2026-01-15T01:08:46.334810+03:00"
+            },
+            {
+                "name": "ANTIHELP",
+                "changed_at": "2026-01-18T13:25:46.301334+03:00"
+            }
+        ],
+        "16049": [
+            {
+                "name": "OGs",
+                "changed_at": "2026-01-16T11:07:46.261302+03:00"
+            }
+        ],
+        "15808": [
+            {
+                "name": "deep ocean",
+                "changed_at": "2026-01-16T11:07:46.261302+03:00"
+            }
+        ],
+        "15745": [
+            {
+                "name": "1000 PING",
+                "changed_at": "2026-01-18T13:33:46.285426+03:00"
+            }
+        ],
+        "16054": [
+            {
+                "name": "Duck stories",
+                "changed_at": "2026-01-18T14:16:18.558481+03:00"
+            }
+        ],
+        "11753": [
+            {
+                "name": "Infinity",
+                "changed_at": "2026-01-18T16:49:17.224918+03:00"
+            }
+        ],
+        "16062": [
+            {
+                "name": "Leopards",
+                "changed_at": "2026-01-22T23:41:27.806573+03:00"
+            }
+        ],
+        "14892": [
+            {
+                "name": "Arm Tanks",
+                "changed_at": "2026-01-22T23:41:27.806573+03:00"
+            }
+        ],
+        "16056": [
+            {
+                "name": "Darcwolf",
+                "changed_at": "2026-01-22T23:41:27.806573+03:00"
+            }
+        ],
+        "16063": [
+            {
+                "name": "EndGame",
+                "changed_at": "2026-01-22T23:41:27.806573+03:00"
+            }
+        ],
+        "16051": [
+            {
+                "name": "ANTARTICA",
+                "changed_at": "2026-01-22T23:41:27.806573+03:00"
+            }
+        ],
+        "16052": [
+            {
+                "name": "Smoke",
+                "changed_at": "2026-01-22T23:47:26.915620+03:00"
+            }
+        ],
+        "12945": [
+            {
+                "name": "live is life",
+                "changed_at": "2026-01-23T13:53:26.920290+03:00"
+            }
+        ],
+        "15320": [
+            {
+                "name": "asdasdsa",
+                "changed_at": "2026-01-23T13:55:26.916776+03:00"
+            }
+        ],
+        "15783": [
+            {
+                "name": "Shiny Players",
+                "changed_at": "2026-01-25T15:53:26.941592+03:00"
+            }
+        ],
+        "15702": [
+            "888"
+        ],
+        "15200": [
+            "Team AraB_AllieD"
+        ]
+    }
+}
