@@ -5,30 +5,30 @@
 
 <div class="results">
 
-{% for round, matches in results.items() %}
-<div class="round-block">
+  {% for round, matches in results_by_round.items() %}
+  <div class="round-block">
 
-  <button class="round-toggle" onclick="toggleRound('{{ round }}')">
-    Раунд {{ round }}
-    <span class="arrow">▼</span>
-  </button>
+    <button class="round-toggle" onclick="toggleRound('{{ round }}')">
+      Раунд {{ round }}
+      <span class="arrow">▼</span>
+    </button>
 
-  <div id="round-{{ round }}" class="round-content">
-    {% if matches %}
-      {% for match in matches %}
-      <div class="result-card">
-        {{ match }}
-      </div>
-      {% endfor %}
-    {% else %}
-      <div class="no-results">
-        Результатов этого раунда ещё нет
-      </div>
-    {% endif %}
+    <div id="round-{{ round }}" class="round-content">
+      {% if matches and matches|length > 0 %}
+        {% for match in matches %}
+        <div class="result-card">
+          {{ match }}
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="no-results">
+          Результатов этого раунда ещё нет
+        </div>
+      {% endif %}
+    </div>
+
   </div>
-
-</div>
-{% endfor %}
+  {% endfor %}
 
 </div>
 
