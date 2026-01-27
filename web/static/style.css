@@ -47,38 +47,107 @@ footer {
 
 
 /* ======================
-   SCHEDULE (MATCHES)
+   MATCHES (SCHEDULE)
 ====================== */
 
 .matches {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 14px;
 }
 
 .match-card {
-    background: #1b1b2a;
-    padding: 16px 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.35);
+    background: linear-gradient(135deg, #1b1b2a, #151522);
+    padding: 14px 18px;
+    border-radius: 14px;
+    box-shadow: 0 0 14px rgba(0,0,0,0.45);
 }
 
-.match-time {
-    font-size: 13px;
-    opacity: 0.7;
-    margin-bottom: 6px;
-}
+/* Верхняя строка: дата / статус */
 
-.match-teams {
+.match-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
+    font-size: 12px;
+    opacity: 0.8;
+    margin-bottom: 8px;
 }
 
-.match-teams .vs {
+.match-datetime {
+    color: #cfd6ff;
+}
+
+/* Статусы */
+
+.match-status {
+    text-align: right;
+}
+
+.countdown {
+    color: #cfd6ff;
+    font-weight: 500;
+}
+
+.live {
+    color: #ff4d4d;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* LIVE DOT */
+
+.live-dot {
+    width: 8px;
+    height: 8px;
+    background: #ff3b3b;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(255,59,59,0.7); }
+    70%  { box-shadow: 0 0 0 8px rgba(255,59,59,0); }
+    100% { box-shadow: 0 0 0 0 rgba(255,59,59,0); }
+}
+
+/* Центральная строка: команды */
+
+.match-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.team {
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.team.left {
+    text-align: right;
+    padding-right: 12px;
+}
+
+.team.right {
+    text-align: left;
+    padding-left: 12px;
+}
+
+.vs {
     font-size: 14px;
-    opacity: 0.5;
+    opacity: 0.55;
+    letter-spacing: 1px;
 }
 
 
@@ -92,15 +161,13 @@ footer {
     gap: 18px;
 }
 
-/* Round block */
+/* Раунд */
 
 .round-block {
     background: #1b1b2a;
-    border-radius: 12px;
+    border-radius: 14px;
     overflow: hidden;
 }
-
-/* Toggle button */
 
 .round-toggle {
     width: 100%;
@@ -117,21 +184,12 @@ footer {
     background: #1d1d2f;
 }
 
-/* Content */
-
 .round-content {
     display: none;
     padding: 14px 16px;
 }
 
-.round-content.open {
-    display: block;
-}
-
-
-/* ======================
-   RESULT CARD
-====================== */
+/* Карточка результата */
 
 .result-card {
     display: flex;
@@ -143,15 +201,7 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Teams */
-
-.team {
-    width: 40%;
-    font-size: 16px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+/* Команды в результатах */
 
 .team.winner {
     color: #4dff88;
@@ -163,7 +213,7 @@ footer {
     opacity: 0.85;
 }
 
-/* Score */
+/* Счёт */
 
 .score {
     width: 20%;
