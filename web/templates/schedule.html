@@ -5,27 +5,24 @@
 
 {% if matches %}
 <div class="matches">
-    {% for m in matches %}
-    <div class="match-card">
-        <div class="match-time">
-            Раунд {{ m.round }} · {{ m.time }}
-        </div>
+  {% for m in matches %}
+  <div class="match-card">
 
-        <div class="match-teams">
-            <span>{{ m.team1 }}</span>
-            <span class="vs">VS</span>
-            <span>{{ m.team2 }}</span>
-        </div>
-
-        {% if m.detail %}
-        <div class="match-status">
-            {{ m.detail }}
-        </div>
-        {% endif %}
+    <div class="match-time">
+      🕒 {{ m.time }}
     </div>
-    {% endfor %}
+
+    <div class="match-teams">
+      <span>{{ m.team1 }}</span>
+      <span class="vs">VS</span>
+      <span>{{ m.team2 }}</span>
+    </div>
+
+  </div>
+  {% endfor %}
 </div>
 {% else %}
 <p>Матчи не найдены</p>
 {% endif %}
+
 {% endblock %}
