@@ -1,11 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
+
 <h2>Расписание матчей</h2>
 
-{% if data %}
-<pre>{{ data | tojson(indent=2) }}</pre>
+{% if matches %}
+<div class="matches">
+    {% for match in matches %}
+    <div class="match-card">
+        <div class="match-time">🕒 {{ match.time }}</div>
+        <div class="match-teams">
+            <span>{{ match.team1 }}</span>
+            <strong>VS</strong>
+            <span>{{ match.team2 }}</span>
+        </div>
+        <div class="match-status">{{ match.status }}</div>
+    </div>
+    {% endfor %}
+</div>
 {% else %}
-<p>Нет данных</p>
+<p>Матчи не найдены</p>
 {% endif %}
 
 {% endblock %}
