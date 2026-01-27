@@ -192,8 +192,8 @@ footer {
 /* Карточка результата */
 
 .result-card {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 90px 1fr;
     align-items: center;
     background: #10101a;
     padding: 12px 16px;
@@ -201,11 +201,28 @@ footer {
     margin-bottom: 10px;
 }
 
+.result-card .team {
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.result-card .team:first-child {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.result-card .team:last-child {
+    text-align: left;
+    padding-left: 10px;
+}
+
 /* Команды в результатах */
 
 .team.winner {
     color: #4dff88;
-    font-weight: bold;
 }
 
 .team.loser {
@@ -216,11 +233,9 @@ footer {
 /* Счёт */
 
 .score {
-    width: 20%;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
 }
 
 
