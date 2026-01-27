@@ -4,16 +4,38 @@
 <h1>Результаты матчей</h1>
 
 <div class="results">
-  {% for r in rounds %}
-  <details class="round">
-    <summary>Раунд {{ r.round }}</summary>
 
-    <ul class="results-list">
-      {% for match in r.matches %}
-      <li>{{ match }}</li>
+{% for round, matches in results.items() %}
+<div class="round-block">
+
+  <button class="round-toggle" onclick="toggleRound('{{ round }}')">
+    Раунд {{ round }}
+    <span class="arrow">▼</span>
+  </button>
+
+  <div id="round-{{ round }}" class="round-content">
+    {% if matches %}
+      {% for match in matches %}
+      <div class="result-card">
+        {{ match }}
+      </div>
       {% endfor %}
-    </ul>
-  </details>
-  {% endfor %}
+    {% else %}
+      <div class="no-results">
+        Результатов этого раунда ещё нет
+      </div>
+    {% endif %}
+  </div>
+
 </div>
+{% endfor %}
+
+</div>
+
+<script>
+function toggleRound(round) {
+  const el = document.getElementById("round-" + round);
+  el.classList.toggle("open");
+}
+</script>
 {% endblock %}
