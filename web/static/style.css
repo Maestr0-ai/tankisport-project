@@ -70,3 +70,31 @@ footer {
     font-size: 13px;
     color: #4da3ff;
 }
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.round {
+  background: #1b1b2a;
+  padding: 12px 16px;
+  border-radius: 10px;
+}
+
+.round summary {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.results-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.results-list li {
+  margin-bottom: 6px;
+  opacity: 0.9;
+}
