@@ -148,21 +148,16 @@ footer {
 }
 
 .team {
-    font-size: 16px;
-    font-weight: 600;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .team.left {
-    text-align: right;
-    padding-right: 14px;
+  text-align: left;
 }
 
 .team.right {
-    text-align: left;
-    padding-left: 14px;
+  text-align: right;
 }
 
 .vs {
@@ -215,13 +210,13 @@ footer {
 /* Карточка результата */
 
 .result-card {
-    display: grid;
-    grid-template-columns: 1fr 90px 1fr;
-    align-items: center;
-    background: #0f0f19;
-    padding: 12px 16px;
-    border-radius: 12px;
-    margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  align-items: center;
+  background: linear-gradient(90deg, #0f1220, #14182b);
+  border-radius: 12px;
+  padding: 14px 20px;
+  margin-bottom: 10px;
 }
 
 .result-card:last-child {
@@ -248,21 +243,20 @@ footer {
 /* Победитель / проигравший */
 
 .team.winner {
-    color: #43ff8a;
+    color: #4dff8a;
 }
 
 .team.loser {
-    color: #ff5b5b;
-    opacity: 0.9;
+  color: #ff5c5c;
 }
 
 /* Счёт */
 
 .score {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 800;
-    letter-spacing: 1px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 /* ======================
@@ -270,8 +264,6 @@ footer {
 ====================== */
 
 .no-results {
-    padding: 14px 0;
-    font-size: 14px;
-    opacity: 0.6;
-    text-align: center;
+  padding: 14px;
+  opacity: 0.6;
 }
