@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Команды</h2>
+
+{% if data %}
+<pre>{{ data | tojson(indent=2) }}</pre>
+{% else %}
+<p>Нет данных</p>
+{% endif %}
+
+{% endblock %}
