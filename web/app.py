@@ -1,115 +1,88 @@
-import json
 from flask import Flask, render_template
-from pathlib import Path
-from datetime import datetime
+import requests
+from datetime import datetime, timezone
 
 app = Flask(__name__)
 
-# team_data.json лежит НА УРОВЕНЬ ВЫШЕ папки web
-DATA_FILE = Path(__file__).resolve().parent.parent / "team_data.json"
+TOURNAMENT_API = "https://tankisport.com/api/tournaments/show/842"
 
 
-def load_data():
-    with open(DATA_FILE, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    teams = data.get("team_states", {})
-    tournament = data.get("tournament_states", {}).get("842", {})
-
-    schedule = tournament.get("schedule", {})
-    match_results = tournament.get("match_results", {})
-    finished_ids = set(tournament.get("notified_results", []))
-
-    return teams, schedule, match_results, finished_ids
+def fetch_tournament():
+    r = requests.get(TOURNAMENT_API, timeout=20)
+    r.raise_for_status()
+    return r.json()
 
 
-# =========================
-# Главная
-# =========================
+def parse_matches(data):
+    matches = []
+
+    for stage in data.get("stages", []):
+        round_name = stage.get("name", "Unknown")
+
+        for match in stage.get("matches", []):
+            team1 = match["team1"]["name"]
+            team2 = match["team2"]["name"]
+
+            start_time = datetime.fromisoformat(
+                match["start_time"].replace("Z", "+00:00")
+            )
+
+            score1 = match.get("score1")
+            score2 = match.get("score2")
+
+            status = match.get("status")  # scheduled | live | finished
+
+            matches.append({
+                "round": round_name,
+                "team1": team1,
+                "team2": team2,
+                "start_time": start_time,
+                "start_iso": start_time.isoformat(),
+                "start_display": start_time.strftime("%d.%m.%Y %H:%M"),
+                "score1": score1,
+                "score2": score2,
+                "status": status,
+            })
+
+    return matches
+
+
 @app.route("/")
 def index():
     return render_template("index.html")
 
 
-# =========================
-# МАТЧИ (будущие + LIVE)
-# =========================
-@app.route("/schedule")
-def schedule_page():
-    teams, schedule_data, _, finished_ids = load_data()
-    matches = []
+@app.route("/matches")
+def matches():
+    data = fetch_tournament()
+    all_matches = parse_matches(data)
 
-    for round_num, round_matches in schedule_data.items():
-        if not isinstance(round_matches, list):
-            continue
+    now = datetime.now(timezone.utc)
 
-        for m in round_matches:
-            match_id = str(m.get("match_id"))
+    upcoming_and_live = [
+        m for m in all_matches
+        if m["status"] in ("scheduled", "live")
+    ]
 
-            # ❗ ЕСЛИ матч уже есть в notified_results → он ЗАВЕРШЁН
-            if match_id in finished_ids:
-                continue
+    upcoming_and_live.sort(key=lambda x: x["start_time"])
 
-            teams_data = m.get("teams", {})
-            t1_id = str(teams_data.get("team1_id"))
-            t2_id = str(teams_data.get("team2_id"))
-
-            match_time = datetime.strptime(
-                m["time"],
-                "%Y-%m-%d %H:%M:%S"
-            )
-
-            matches.append({
-                "id": match_id,
-                "round": round_num,
-                "team1": teams.get(t1_id, {}).get("name", f"Team {t1_id}"),
-                "team2": teams.get(t2_id, {}).get("name", f"Team {t2_id}"),
-                "time_display": match_time.strftime("%d.%m.%Y %H:%M"),
-                "time_iso": match_time.isoformat()
-            })
-
-    matches.sort(key=lambda x: x["time_iso"])
-    return render_template("schedule.html", matches=matches)
+    return render_template(
+        "schedule.html",
+        matches=upcoming_and_live,
+        now_iso=now.isoformat()
+    )
 
 
-# =========================
-# РЕЗУЛЬТАТЫ (ТОЛЬКО ЗАВЕРШЁННЫЕ)
-# =========================
 @app.route("/results")
-def results_page():
-    _, _, results_data, _ = load_data()
+def results():
+    data = fetch_tournament()
+    all_matches = parse_matches(data)
 
     results_by_round = {}
 
-    for round_num in range(1, 8):
-        round_key = str(round_num)
-        parsed = []
-
-        for raw in results_data.get(round_key, []):
-            # пример:
-            # ⭐ **APEX ELITE** (1) — **EndGame** (3)
-            try:
-                clean = raw.replace("⭐", "").replace("**", "").strip()
-                left, right = clean.split("—")
-
-                team1, s1 = left.rsplit("(", 1)
-                team2, s2 = right.rsplit("(", 1)
-
-                score1 = int(s1.replace(")", "").strip())
-                score2 = int(s2.replace(")", "").strip())
-
-                parsed.append({
-                    "team1": team1.strip(),
-                    "team2": team2.strip(),
-                    "score1": score1,
-                    "score2": score2,
-                    "winner": "team1" if score1 > score2 else "team2"
-                })
-
-            except Exception:
-                continue
-
-        results_by_round[round_num] = parsed
+    for m in all_matches:
+        if m["status"] == "finished":
+            results_by_round.setdefault(m["round"], []).append(m)
 
     return render_template(
         "results.html",
@@ -117,23 +90,5 @@ def results_page():
     )
 
 
-# =========================
-# КОМАНДЫ
-# =========================
-@app.route("/teams")
-def teams_page():
-    teams, _, _, _ = load_data()
-    return render_template("teams.html", teams=teams)
-
-
-# =========================
-# СТАТИСТИКА
-# =========================
-@app.route("/stats")
-def stats_page():
-    _, _, results, _ = load_data()
-    return render_template("stats.html", results=results)
-
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+    app.run(debug=True)
