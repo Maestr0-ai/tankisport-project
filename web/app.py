@@ -4,11 +4,13 @@ from pathlib import Path
 
 app = Flask(__name__)
 
-DATA_FILE = Path("team_data.json")
+# ⬇️ ВАЖНО: файл лежит на уровень выше папки web
+DATA_FILE = Path(__file__).resolve().parent.parent / "team_data.json"
 
 
 def load_data():
     if not DATA_FILE.exists():
+        print("❌ team_data.json NOT FOUND:", DATA_FILE)
         return {}, {}, {}
 
     with open(DATA_FILE, "r", encoding="utf-8") as f:
