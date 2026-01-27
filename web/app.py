@@ -1,81 +1,71 @@
-from flask import Flask, render_template
 import json
-from datetime import datetime
+from flask import Flask, render_template
+from pathlib import Path
 
 app = Flask(__name__)
 
-# ---------- helpers ----------
+DATA_FILE = Path("team_data.json")
 
-def load_json(path, default=None):
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"Error loading {path}: {e}")
-        return default if default is not None else {}
 
-def format_time(ts):
-    try:
-        dt = datetime.strptime(ts, "%Y-%m-%d %H:%M:%S")
-        return dt.strftime("%d.%m %H:%M")
-    except:
-        return ts
+def load_data():
+    if not DATA_FILE.exists():
+        return {}, {}, {}
 
-# ---------- routes ----------
+    with open(DATA_FILE, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    teams = data.get("team_states", {})
+    tournament = data.get("tournament_states", {}).get("842", {})
+    schedule = tournament.get("schedule", {})
+
+    return teams, tournament, schedule
+
 
 @app.route("/")
 def index():
-    data = load_json("../team_data.json")
-    tournaments = data.get("tournament_states", {})
-    tournament = next(iter(tournaments.values()), {})
-    results = tournament.get("match_results", {})
-    return render_template("index.html", results=results)
+    return render_template("index.html")
 
 
 @app.route("/schedule")
 def schedule():
-    data = load_json("../team_data.json")
+    teams, tournament, schedule_data = load_data()
 
-    team_states = data.get("team_states", {})
-    tournaments = data.get("tournament_states", {})
-    tournament = next(iter(tournaments.values()), {})
-
-    raw_schedule = tournament.get("schedule", [])
     matches = []
 
-    for match in raw_schedule:
-        team1_id = str(match["teams"]["team1_id"])
-        team2_id = str(match["teams"]["team2_id"])
+    for round_num, round_matches in schedule_data.items():
+        if not isinstance(round_matches, list):
+            continue
 
-        team1 = team_states.get(team1_id, {}).get("name", "Unknown")
-        team2 = team_states.get(team2_id, {}).get("name", "Unknown")
+        for match in round_matches:
+            teams_data = match.get("teams", {})
+            team1_id = str(teams_data.get("team1_id", ""))
+            team2_id = str(teams_data.get("team2_id", ""))
 
-        matches.append({
-            "match_id": match.get("match_id"),
-            "time": format_time(match.get("time")),
-            "team1": team1,
-            "team2": team2,
-            "detail": match.get("detail", "")
-        })
+            team1_name = teams.get(team1_id, {}).get("name", f"Team {team1_id}")
+            team2_name = teams.get(team2_id, {}).get("name", f"Team {team2_id}")
+
+            matches.append({
+                "round": round_num,
+                "time": match.get("time", ""),
+                "detail": match.get("detail", ""),
+                "team1": team1_name,
+                "team2": team2_name,
+            })
 
     return render_template("schedule.html", matches=matches)
 
 
 @app.route("/teams")
 def teams():
-    data = load_json("../team_data.json")
-    teams = data.get("team_states", {})
+    teams, _, _ = load_data()
     return render_template("teams.html", teams=teams)
 
 
 @app.route("/stats")
 def stats():
-    data = load_json("../team_data.json")
-    teams = data.get("team_states", {})
-    return render_template("stats.html", teams=teams)
+    _, tournament, _ = load_data()
+    return render_template("stats.html", tournament=tournament)
 
-
-# ---------- run ----------
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000, debug=False)
+    app.run(host="0.0.0.0", port=10000)
