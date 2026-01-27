@@ -2,49 +2,63 @@
    BASE
 ====================== */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f0f14;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Ubuntu, sans-serif;
+    background: radial-gradient(circle at top, #141422, #0b0b12);
     color: #eaeaea;
 }
 
+/* ======================
+   HEADER / NAV
+====================== */
+
 header {
-    background: #151522;
-    padding: 15px 20px;
+    background: linear-gradient(135deg, #17172a, #12121f);
+    padding: 16px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
 }
 
 header h1 {
     margin: 0;
     font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 nav a {
-    color: #eaeaea;
-    margin-left: 15px;
+    color: #dfe3ff;
+    margin-left: 18px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
+    opacity: 0.85;
+    transition: 0.2s;
 }
 
 nav a:hover {
-    color: #4da3ff;
+    opacity: 1;
+    color: #6aa8ff;
 }
 
 main {
-    padding: 20px;
+    padding: 26px 22px;
 }
 
 footer {
-    background: #151522;
-    padding: 10px;
+    background: #12121f;
+    padding: 12px;
     text-align: center;
     font-size: 12px;
     opacity: 0.6;
 }
-
 
 /* ======================
    MATCHES (SCHEDULE)
@@ -53,72 +67,79 @@ footer {
 .matches {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 16px;
 }
 
 .match-card {
-    background: linear-gradient(135deg, #1b1b2a, #151522);
-    padding: 14px 18px;
+    background: linear-gradient(135deg, #1c1c2e, #141421);
+    padding: 14px 18px 16px;
     border-radius: 14px;
-    box-shadow: 0 0 14px rgba(0,0,0,0.45);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    transition: 0.25s;
 }
 
-/* Верхняя строка: дата / статус */
+.match-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.45);
+}
+
+/* Верхняя строка */
 
 .match-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
-    opacity: 0.8;
-    margin-bottom: 8px;
+    opacity: 0.85;
+    margin-bottom: 10px;
 }
 
 .match-datetime {
-    color: #cfd6ff;
+    color: #cdd4ff;
 }
 
 /* Статусы */
 
 .match-status {
-    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
 }
 
 .countdown {
-    color: #cfd6ff;
-    font-weight: 500;
+    color: #a8b1ff;
 }
 
+/* LIVE */
+
 .live {
-    color: #ff4d4d;
-    font-weight: 700;
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    color: #ff4b4b;
+    font-weight: 700;
 }
 
 .hidden {
     display: none;
 }
 
-/* LIVE DOT */
-
 .live-dot {
     width: 8px;
     height: 8px;
     background: #ff3b3b;
     border-radius: 50%;
-    display: inline-block;
-    animation: pulse 1.2s infinite;
+    animation: pulse 1.3s infinite;
 }
 
 @keyframes pulse {
-    0%   { box-shadow: 0 0 0 0 rgba(255,59,59,0.7); }
+    0%   { box-shadow: 0 0 0 0 rgba(255,59,59,0.6); }
     70%  { box-shadow: 0 0 0 8px rgba(255,59,59,0); }
     100% { box-shadow: 0 0 0 0 rgba(255,59,59,0); }
 }
 
-/* Центральная строка: команды */
+/* Центр (команды + VS) */
 
 .match-row {
     display: grid;
@@ -136,20 +157,19 @@ footer {
 
 .team.left {
     text-align: right;
-    padding-right: 12px;
+    padding-right: 14px;
 }
 
 .team.right {
     text-align: left;
-    padding-left: 12px;
+    padding-left: 14px;
 }
 
 .vs {
     font-size: 14px;
-    opacity: 0.55;
     letter-spacing: 1px;
+    opacity: 0.55;
 }
-
 
 /* ======================
    RESULTS
@@ -158,35 +178,38 @@ footer {
 .results {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
 }
 
 /* Раунд */
 
 .round-block {
-    background: #1b1b2a;
-    border-radius: 14px;
+    background: linear-gradient(135deg, #1a1a2c, #12121e);
+    border-radius: 16px;
     overflow: hidden;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.35);
 }
 
 .round-toggle {
     width: 100%;
-    background: #151522;
+    background: transparent;
     color: #ffffff;
-    padding: 14px 18px;
+    padding: 16px 20px;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 700;
     text-align: left;
+    transition: 0.2s;
 }
 
 .round-toggle:hover {
-    background: #1d1d2f;
+    background: rgba(255,255,255,0.04);
 }
 
 .round-content {
     display: none;
-    padding: 14px 16px;
+    padding: 14px 18px 18px;
 }
 
 /* Карточка результата */
@@ -195,39 +218,42 @@ footer {
     display: grid;
     grid-template-columns: 1fr 90px 1fr;
     align-items: center;
-    background: #10101a;
+    background: #0f0f19;
     padding: 12px 16px;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-bottom: 10px;
 }
+
+.result-card:last-child {
+    margin-bottom: 0;
+}
+
+/* Команды */
 
 .result-card .team {
     font-size: 15px;
     font-weight: 600;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
-.result-card .team:first-child {
+.result-card .team.left {
     text-align: right;
     padding-right: 10px;
 }
 
-.result-card .team:last-child {
+.result-card .team.right {
     text-align: left;
     padding-left: 10px;
 }
 
-/* Команды в результатах */
+/* Победитель / проигравший */
 
 .team.winner {
-    color: #4dff88;
+    color: #43ff8a;
 }
 
 .team.loser {
-    color: #ff5c5c;
-    opacity: 0.85;
+    color: #ff5b5b;
+    opacity: 0.9;
 }
 
 /* Счёт */
@@ -235,16 +261,16 @@ footer {
 .score {
     text-align: center;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
-
 /* ======================
-   EMPTY STATES
+   EMPTY
 ====================== */
 
 .no-results {
-    padding: 12px 0;
+    padding: 14px 0;
     font-size: 14px;
     opacity: 0.6;
     text-align: center;
