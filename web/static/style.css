@@ -39,3 +39,34 @@ footer {
     font-size: 12px;
     opacity: 0.7;
 }
+
+.matches {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.match-card {
+    background: #1b1b2a;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.match-time {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.match-teams {
+    font-size: 18px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.match-status {
+    font-size: 13px;
+    color: #4da3ff;
+}
