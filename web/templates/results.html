@@ -18,8 +18,7 @@
       {% for m in matches %}
       <div class="result-card">
 
-        <div class="team left
-          {% if m.score1 > m.score2 %}winner{% elif m.score1 < m.score2 %}loser{% endif %}">
+        <div class="team left {% if m.score1 > m.score2 %}winner{% else %}loser{% endif %}">
           {{ m.team1 }}
         </div>
 
@@ -27,17 +26,14 @@
           {{ m.score1 }} : {{ m.score2 }}
         </div>
 
-        <div class="team right
-          {% if m.score2 > m.score1 %}winner{% elif m.score2 < m.score1 %}loser{% endif %}">
+        <div class="team right {% if m.score2 > m.score1 %}winner{% else %}loser{% endif %}">
           {{ m.team2 }}
         </div>
 
       </div>
       {% endfor %}
     {% else %}
-      <div class="no-results">
-        Результатов этого раунда ещё нет
-      </div>
+      <div class="no-results">Результатов этого раунда ещё нет</div>
     {% endif %}
 
   </div>
@@ -47,9 +43,9 @@
 </div>
 
 <script>
-function toggleRound(id) {
-  const el = document.getElementById("round-" + id);
-  el.style.display = el.style.display === "block" ? "none" : "block";
+function toggleRound(id){
+  const el=document.getElementById("round-"+id);
+  el.style.display = el.style.display==="block" ? "none" : "block";
 }
 </script>
 
