@@ -1,6 +1,7 @@
 import json
 from flask import Flask, render_template
 from pathlib import Path
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -10,10 +11,10 @@ DATA_FILE = Path(__file__).resolve().parent.parent / "team_data.json"
 
 def load_data():
     """
-    Загружает и возвращает:
+    Загружает данные и возвращает:
     - teams: словарь команд
-    - schedule: расписание матчей по раундам
-    - results: результаты матчей по раундам
+    - schedule: расписание матчей
+    - results: результаты матчей
     - finished_ids: ID завершённых матчей
     """
     with open(DATA_FILE, "r", encoding="utf-8") as f:
@@ -34,9 +35,12 @@ def index():
     return render_template("index.html")
 
 
-# ======================
-# 📅 МАТЧИ (ТОЛЬКО АКТИВНЫЕ)
-# ======================
+# ==================================================
+# 📅 МАТЧИ
+# - будущие
+# - LIVE
+# (завершённые сюда НЕ попадают)
+# ==================================================
 @app.route("/schedule")
 def schedule_page():
     teams, schedule_data, _, finished_ids = load_data()
@@ -49,40 +53,61 @@ def schedule_page():
         for m in round_matches:
             match_id = str(m.get("match_id"))
             if match_id in finished_ids:
-                continue  # матч завершён → не показываем
+                # матч завершён → он будет в Results
+                continue
 
             teams_data = m.get("teams", {})
             t1_id = str(teams_data.get("team1_id"))
             t2_id = str(teams_data.get("team2_id"))
 
+            # парсим время матча
+            match_time = datetime.strptime(
+                m.get("time"),
+                "%Y-%m-%d %H:%M:%S"
+            )
+
             matches.append({
+                "id": match_id,
                 "round": round_num,
-                "time": m.get("time"),
                 "team1": teams.get(t1_id, {}).get("name", f"Team {t1_id}"),
-                "team2": teams.get(t2_id, {}).get("name", f"Team {t2_id}")
+                "team2": teams.get(t2_id, {}).get("name", f"Team {t2_id}"),
+
+                # для отображения
+                "time_display": match_time.strftime("%d.%m.%Y %H:%M"),
+
+                # для JS таймеров (LIVE / countdown)
+                "time_iso": match_time.isoformat()
             })
+
+    # сортируем по времени (LIVE сами всплывут вверху через JS)
+    matches.sort(key=lambda x: x["time_iso"])
 
     return render_template("schedule.html", matches=matches)
 
 
-# ======================
-# 🏆 РЕЗУЛЬТАТЫ (ПО РАУНДАМ)
-# ======================
+# ==================================================
+# 🏆 РЕЗУЛЬТАТЫ (ТОЛЬКО ЗАВЕРШЁННЫЕ)
+# ==================================================
 @app.route("/results")
 def results_page():
     _, _, results_data, _ = load_data()
     results_by_round = {}
 
-    # Раунды 1–7 (фиксировано, как ты хотел)
+    # фиксированные раунды 1–7
     for round_num in range(1, 8):
         round_key = str(round_num)
         parsed_results = []
 
         for raw in results_data.get(round_key, []):
-            # пример строки:
-            # ⭐ **TeamA** (3) — **TeamB** (1)
+            # ожидаемый формат строки:
+            # ⭐ **Team A** (3) — **Team B** (1)
             try:
-                clean = raw.replace("⭐", "").replace("**", "").strip()
+                clean = (
+                    raw.replace("⭐", "")
+                       .replace("**", "")
+                       .strip()
+                )
+
                 left, right = clean.split("—")
 
                 team1, s1 = left.rsplit("(", 1)
@@ -97,8 +122,9 @@ def results_page():
                     "score1": score1,
                     "score2": score2
                 })
+
             except Exception:
-                # если вдруг формат строки сломан — просто пропускаем
+                # если формат строки битый — пропускаем
                 continue
 
         results_by_round[round_num] = parsed_results
