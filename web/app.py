@@ -68,6 +68,20 @@ def stats():
     _, tournament, _ = load_data()
     return render_template("stats.html", tournament=tournament)
 
+@app.route("/results")
+def results():
+    teams, tournament, _ = load_data()
+    results = tournament.get("match_results", {})
+
+    rounds = []
+    for round_num, matches in results.items():
+        rounds.append({
+            "round": round_num,
+            "matches": matches
+        })
+
+    return render_template("results.html", rounds=rounds)
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
