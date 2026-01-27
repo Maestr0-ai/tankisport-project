@@ -56,18 +56,6 @@ def schedule():
 
     return render_template("schedule.html", matches=matches)
 
-
-@app.route("/teams")
-def teams():
-    teams, _, _ = load_data()
-    return render_template("teams.html", teams=teams)
-
-
-@app.route("/stats")
-def stats():
-    _, tournament, _ = load_data()
-    return render_template("stats.html", tournament=tournament)
-
 @app.route("/results")
 def results():
     teams, tournament, _ = load_data()
@@ -81,6 +69,18 @@ def results():
         })
 
     return render_template("results.html", rounds=rounds)
+
+
+@app.route("/teams")
+def teams():
+    teams, _, _ = load_data()
+    return render_template("teams.html", teams=teams)
+
+
+@app.route("/stats")
+def stats():
+    _, tournament, _ = load_data()
+    return render_template("stats.html", tournament=tournament)
 
 
 if __name__ == "__main__":
