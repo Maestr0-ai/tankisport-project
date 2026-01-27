@@ -1,28 +1,76 @@
 {% extends "base.html" %}
-
 {% block content %}
-<h1>Расписание матчей</h1>
 
-{% if matches %}
-<div class="matches">
-  {% for m in matches %}
-  <div class="match-card">
+<h1>Матчи</h1>
 
-    <div class="match-time">
-      🕒 {{ m.time }}
-    </div>
+<div class="matches" id="matches">
 
-    <div class="match-teams">
-      <span>{{ m.team1 }}</span>
-      <span class="vs">VS</span>
-      <span>{{ m.team2 }}</span>
-    </div>
+{% for m in matches %}
+<div class="match-card"
+     data-start="{{ m.time_iso }}">
 
+  <!-- ВЕРХ -->
+  <div class="match-top">
+    <span class="match-datetime">{{ m.time_display }}</span>
+    <span class="match-status">
+      <span class="countdown">⏳</span>
+      <span class="live hidden">
+        <span class="live-dot"></span> LIVE · <span class="duration">00:00:00</span>
+      </span>
+    </span>
   </div>
-  {% endfor %}
+
+  <!-- ЦЕНТР -->
+  <div class="match-row">
+    <div class="team left">{{ m.team1 }}</div>
+    <div class="vs">VS</div>
+    <div class="team right">{{ m.team2 }}</div>
+  </div>
+
 </div>
-{% else %}
-<p>Матчи не найдены</p>
-{% endif %}
+{% endfor %}
+
+</div>
+
+<script>
+function pad(n) {
+  return n.toString().padStart(2, "0");
+}
+
+function updateMatches() {
+  const now = new Date();
+
+  document.querySelectorAll(".match-card").forEach(card => {
+    const start = new Date(card.dataset.start);
+    const diff = start - now;
+
+    const countdown = card.querySelector(".countdown");
+    const live = card.querySelector(".live");
+    const duration = card.querySelector(".duration");
+
+    if (diff > 0) {
+      const h = Math.floor(diff / 1000 / 3600);
+      const m = Math.floor((diff / 1000 % 3600) / 60);
+      const s = Math.floor(diff / 1000 % 60);
+      countdown.textContent = `⏳ ${pad(h)}:${pad(m)}:${pad(s)}`;
+      return;
+    }
+
+    // LIVE
+    countdown.style.display = "none";
+    live.classList.remove("hidden");
+
+    const liveSec = Math.floor((now - start) / 1000);
+    const lh = Math.floor(liveSec / 3600);
+    const lm = Math.floor((liveSec % 3600) / 60);
+    const ls = liveSec % 60;
+
+    duration.textContent = `${pad(lh)}:${pad(lm)}:${pad(ls)}`;
+  });
+}
+
+updateMatches();
+setInterval(updateMatches, 1000);
+</script>
 
 {% endblock %}
