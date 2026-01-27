@@ -58,17 +58,21 @@ def schedule():
 
 @app.route("/results")
 def results():
-    teams, tournament, _ = load_data()
-    results = tournament.get("match_results", {})
+    with open("team_data.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
 
-    rounds = []
-    for round_num, matches in results.items():
-        rounds.append({
-            "round": round_num,
-            "matches": matches
-        })
+    tournament = data["tournament_states"]["842"]
 
-    return render_template("results.html", rounds=rounds)
+    results_by_round = {}
+
+    for round_num in range(1, 8):
+        round_key = str(round_num)
+        results_by_round[round_num] = tournament["match_results"].get(round_key, [])
+
+    return render_template(
+        "results.html",
+        results=results_by_round
+    )
 
 
 @app.route("/teams")
