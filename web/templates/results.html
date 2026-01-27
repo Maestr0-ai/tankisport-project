@@ -3,35 +3,51 @@
 
 <h1>Результаты матчей</h1>
 
-{% for round, matches in results_by_round.items() %}
-<div class="round-block">
-  <button class="round-toggle" onclick="toggleRound('round{{ round }}')">
-    Раунд {{ round }} ▼
-  </button>
+<div class="results">
 
-  <div id="round{{ round }}" class="round-content">
-    {% if matches %}
-      {% for m in matches %}
+{% for round, matches in results_by_round.items() %}
+  <div class="round-block">
+
+    <button class="round-toggle" onclick="toggleRound('round{{ round }}')">
+      Раунд {{ round }}
+      <span class="arrow">▼</span>
+    </button>
+
+    <div id="round{{ round }}" class="round-content">
+      {% if matches and matches|length > 0 %}
+
+        {% for m in matches %}
         <div class="result-card">
+
+          <!-- Команда 1 -->
           <span class="team {% if m.score1 > m.score2 %}winner{% else %}loser{% endif %}">
             {{ m.team1 }}
           </span>
 
+          <!-- Счёт -->
           <span class="score">
             {{ m.score1 }} : {{ m.score2 }}
           </span>
 
+          <!-- Команда 2 -->
           <span class="team {% if m.score2 > m.score1 %}winner{% else %}loser{% endif %}">
             {{ m.team2 }}
           </span>
+
         </div>
-      {% endfor %}
-    {% else %}
-      <p class="no-results">Результатов этого раунда ещё нет</p>
-    {% endif %}
+        {% endfor %}
+
+      {% else %}
+        <div class="no-results">
+          Результатов этого раунда ещё нет
+        </div>
+      {% endif %}
+    </div>
+
   </div>
-</div>
 {% endfor %}
+
+</div>
 
 <script>
 function toggleRound(id) {
