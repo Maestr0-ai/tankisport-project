@@ -1,16 +1,20 @@
 from flask import Flask, render_template
 import requests
 from datetime import datetime, timezone
+import os
 
 app = Flask(__name__)
 
+# ===== НАСТРОЙКИ =====
 TOURNAMENT_API = "https://tankisport.com/api/tournaments/show/842"
+REQUEST_TIMEOUT = 20
 
 
+# ===== ЗАГРУЗКА ДАННЫХ =====
 def fetch_tournament():
-    r = requests.get(TOURNAMENT_API, timeout=20)
-    r.raise_for_status()
-    return r.json()
+    response = requests.get(TOURNAMENT_API, timeout=REQUEST_TIMEOUT)
+    response.raise_for_status()
+    return response.json()
 
 
 def parse_matches(data):
@@ -27,9 +31,6 @@ def parse_matches(data):
                 match["start_time"].replace("Z", "+00:00")
             )
 
-            score1 = match.get("score1")
-            score2 = match.get("score2")
-
             status = match.get("status")  # scheduled | live | finished
 
             matches.append({
@@ -37,16 +38,17 @@ def parse_matches(data):
                 "team1": team1,
                 "team2": team2,
                 "start_time": start_time,
-                "start_iso": start_time.isoformat(),
-                "start_display": start_time.strftime("%d.%m.%Y %H:%M"),
-                "score1": score1,
-                "score2": score2,
+                "time_iso": start_time.isoformat(),
+                "time_display": start_time.strftime("%d.%m.%Y %H:%M"),
+                "score1": match.get("score1"),
+                "score2": match.get("score2"),
                 "status": status,
             })
 
     return matches
 
 
+# ===== РОУТЫ =====
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -57,19 +59,18 @@ def matches():
     data = fetch_tournament()
     all_matches = parse_matches(data)
 
-    now = datetime.now(timezone.utc)
-
-    upcoming_and_live = [
+    # Показываем ТОЛЬКО запланированные и LIVE
+    active_matches = [
         m for m in all_matches
         if m["status"] in ("scheduled", "live")
     ]
 
-    upcoming_and_live.sort(key=lambda x: x["start_time"])
+    active_matches.sort(key=lambda x: x["start_time"])
 
     return render_template(
         "schedule.html",
-        matches=upcoming_and_live,
-        now_iso=now.isoformat()
+        matches=active_matches,
+        now_iso=datetime.now(timezone.utc).isoformat()
     )
 
 
@@ -90,5 +91,7 @@ def results():
     )
 
 
+# ===== ЗАПУСК ДЛЯ RENDER =====
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
