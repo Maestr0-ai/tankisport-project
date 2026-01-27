@@ -1,3 +1,7 @@
+/* ======================
+   BASE
+====================== */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -22,6 +26,7 @@ nav a {
     color: #eaeaea;
     margin-left: 15px;
     text-decoration: none;
+    font-size: 15px;
 }
 
 nav a:hover {
@@ -37,8 +42,13 @@ footer {
     padding: 10px;
     text-align: center;
     font-size: 12px;
-    opacity: 0.7;
+    opacity: 0.6;
 }
+
+
+/* ======================
+   SCHEDULE (MATCHES)
+====================== */
 
 .matches {
     display: flex;
@@ -48,117 +58,129 @@ footer {
 
 .match-card {
     background: #1b1b2a;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.35);
 }
 
 .match-time {
-    font-size: 14px;
+    font-size: 13px;
     opacity: 0.7;
+    margin-bottom: 6px;
 }
 
 .match-teams {
-    font-size: 18px;
-    margin: 8px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 18px;
 }
 
-.match-status {
-    font-size: 13px;
-    color: #4da3ff;
+.match-teams .vs {
+    font-size: 14px;
+    opacity: 0.5;
 }
+
+
+/* ======================
+   RESULTS
+====================== */
 
 .results {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
-.round {
-  background: #1b1b2a;
-  padding: 12px 16px;
-  border-radius: 10px;
-}
-
-.round summary {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.results-list {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-.results-list li {
-  margin-bottom: 6px;
-  opacity: 0.9;
-}
+/* Round block */
 
 .round-block {
-  margin-bottom: 20px;
+    background: #1b1b2a;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
+/* Toggle button */
+
 .round-toggle {
-  width: 100%;
-  background: #1b1b2a;
-  color: #fff;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
+    width: 100%;
+    background: #151522;
+    color: #ffffff;
+    padding: 14px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
 }
 
 .round-toggle:hover {
-  background: #1d1d2f;
+    background: #1d1d2f;
 }
 
+/* Content */
+
 .round-content {
-  display: none;
-  margin-top: 10px;
+    display: none;
+    padding: 14px 16px;
 }
 
 .round-content.open {
-  display: block;
+    display: block;
 }
+
+
+/* ======================
+   RESULT CARD
+====================== */
 
 .result-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #141421;
-  padding: 12px 16px;
-  border-radius: 8px;
-  margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #10101a;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
+
+/* Teams */
 
 .team {
-  width: 40%;
-  font-size: 16px;
+    width: 40%;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.winner {
-  color: #4dff88;
-  font-weight: bold;
+.team.winner {
+    color: #4dff88;
+    font-weight: bold;
 }
 
-.loser {
-  color: #ff5c5c;
+.team.loser {
+    color: #ff5c5c;
+    opacity: 0.85;
 }
+
+/* Score */
 
 .score {
-  width: 20%;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
+
+/* ======================
+   EMPTY STATES
+====================== */
+
 .no-results {
-  opacity: 0.6;
-  padding: 10px;
+    padding: 12px 0;
+    font-size: 14px;
+    opacity: 0.6;
+    text-align: center;
 }
