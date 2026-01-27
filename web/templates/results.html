@@ -3,69 +3,40 @@
 
 <h1>Результаты матчей</h1>
 
-<div class="results">
-
 {% for round, matches in results_by_round.items() %}
 <div class="round-block">
-
-  <button class="round-toggle" onclick="toggleRound('{{ round }}')">
-    Раунд {{ round }}
-    <span class="arrow">▼</span>
+  <button class="round-toggle" onclick="toggleRound('round{{ round }}')">
+    Раунд {{ round }} ▼
   </button>
 
-  <div id="round-{{ round }}" class="round-content">
-
-    {% if matches and matches|length > 0 %}
-
-      {% for raw in matches %}
-
-        {% set clean = raw
-          | replace('⭐', '')
-          | replace('**', '')
-        %}
-
-        {% set left = clean.split('—')[0].strip() %}
-        {% set right = clean.split('—')[1].strip() %}
-
-        {% set team1 = left.rsplit('(', 1)[0].strip() %}
-        {% set score1 = left.rsplit('(', 1)[1].replace(')', '')|int %}
-
-        {% set team2 = right.rsplit('(', 1)[0].strip() %}
-        {% set score2 = right.rsplit('(', 1)[1].replace(')', '')|int %}
-
+  <div id="round{{ round }}" class="round-content">
+    {% if matches %}
+      {% for m in matches %}
         <div class="result-card">
-
-          <span class="team {% if score1 > score2 %}winner{% endif %}">
-            {{ team1 }}
+          <span class="team {% if m.score1 > m.score2 %}winner{% else %}loser{% endif %}">
+            {{ m.team1 }}
           </span>
 
           <span class="score">
-            {{ score1 }} : {{ score2 }}
+            {{ m.score1 }} : {{ m.score2 }}
           </span>
 
-          <span class="team {% if score2 > score1 %}winner{% endif %}">
-            {{ team2 }}
+          <span class="team {% if m.score2 > m.score1 %}winner{% else %}loser{% endif %}">
+            {{ m.team2 }}
           </span>
-
         </div>
-
       {% endfor %}
-
     {% else %}
-      <div class="no-results">
-        Результатов этого раунда ещё нет
-      </div>
+      <p class="no-results">Результатов этого раунда ещё нет</p>
     {% endif %}
-
   </div>
 </div>
 {% endfor %}
 
-</div>
-
 <script>
-function toggleRound(round) {
-  document.getElementById("round-" + round).classList.toggle("open");
+function toggleRound(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "block" ? "none" : "block";
 }
 </script>
 
