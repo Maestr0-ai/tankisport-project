@@ -1,24 +1,32 @@
 {% extends "base.html" %}
+
 {% block content %}
+<h1>📅 Расписание матчей</h1>
 
-<h2>Расписание матчей</h2>
-
-{% if matches %}
 <div class="matches">
-    {% for match in matches %}
+  {% for match in matches %}
     <div class="match-card">
-        <div class="match-time">🕒 {{ match.time }}</div>
-        <div class="match-teams">
-            <span>{{ match.team1 }}</span>
-            <strong>VS</strong>
-            <span>{{ match.team2 }}</span>
+      
+      <div class="match-time">
+        🕒 {{ match.time }}
+      </div>
+
+      <div class="match-teams">
+        <span>{{ match.team1 }}</span>
+        <span class="vs">VS</span>
+        <span>{{ match.team2 }}</span>
+      </div>
+
+      {% if match.detail %}
+        <div class="match-status">
+          {{ match.detail }}
         </div>
-        <div class="match-status">{{ match.status }}</div>
+      {% endif %}
+
     </div>
-    {% endfor %}
+  {% else %}
+    <p>Матчи не найдены</p>
+  {% endfor %}
 </div>
-{% else %}
-<p>Матчи не найдены</p>
-{% endif %}
 
 {% endblock %}
