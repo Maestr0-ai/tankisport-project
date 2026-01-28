@@ -42,7 +42,8 @@ def index():
 
 @app.route("/schedule")
 def schedule():
-    data = fetch_tournament()
+    data = requests.get(API_TOURNAMENT).json()
+    print("TOURNAMENT DATA:", data)
     matches = []
 
     if data:
