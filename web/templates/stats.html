@@ -1,11 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Статистика</h2>
 
-{% if data %}
-<pre>{{ data | tojson(indent=2) }}</pre>
-{% else %}
-<p>Нет данных</p>
-{% endif %}
+<h1>Статистика</h1>
+
+<ul>
+  <li>Всего матчей: {{ stats.total }}</li>
+  <li>Завершено: {{ stats.finished }}</li>
+  <li>LIVE: {{ stats.live }}</li>
+  <li>Ожидаются: {{ stats.upcoming }}</li>
+</ul>
 
 {% endblock %}
