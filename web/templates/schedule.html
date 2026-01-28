@@ -3,67 +3,57 @@
 
 <h1>Матчи</h1>
 
+{% if matches %}
 <div class="matches">
-{% for m in matches %}
-<div class="match-card" data-start="{{ m.time_iso }}" data-status="{{ m.status }}">
+  {% for m in matches %}
+  <div class="match-card" data-start="{{ m.time_iso }}">
 
-  <div class="match-top">
-    <span class="match-datetime">{{ m.time_display }}</span>
+    <div class="match-top">
+      <span class="match-datetime">{{ m.time_display }}</span>
 
-    <span class="match-status">
-      <span class="countdown"></span>
+      {% if m.status == 1 %}
+        <span class="live">
+          <span class="live-dot"></span> LIVE
+        </span>
+      {% elif m.status == 0 %}
+        <span class="countdown">⏳</span>
+      {% else %}
+        <span class="finished">Завершён</span>
+      {% endif %}
+    </div>
 
-      <span class="live {% if m.status != 'live' %}hidden{% endif %}">
-        <span class="live-dot"></span>
-        LIVE · <span class="duration">00:00:00</span>
-      </span>
-    </span>
+    <div class="match-row">
+      <span class="team left">{{ m.team1 }}</span>
+      <span class="vs">VS</span>
+      <span class="team right">{{ m.team2 }}</span>
+    </div>
+
   </div>
-
-  <div class="match-row">
-    <div class="team left">{{ m.team1 }}</div>
-    <div class="vs">VS</div>
-    <div class="team right">{{ m.team2 }}</div>
-  </div>
-
+  {% endfor %}
 </div>
-{% endfor %}
-</div>
+{% else %}
+<p>Матчей нет</p>
+{% endif %}
 
 <script>
-function pad(n){return n.toString().padStart(2,"0")}
+function pad(n){return n.toString().padStart(2,"0");}
 
-function updateMatches(){
-  const now = new Date()
-
+function updateTimers(){
+  const now = new Date();
   document.querySelectorAll(".match-card").forEach(card=>{
-    const start = new Date(card.dataset.start)
-    const status = card.dataset.status
-
-    const countdown = card.querySelector(".countdown")
-    const live = card.querySelector(".live")
-    const duration = card.querySelector(".duration")
-
-    if(status === "scheduled"){
-      const diff = start - now
-      if(diff > 0){
-        const h = Math.floor(diff/3600000)
-        const m = Math.floor(diff/60000)%60
-        const s = Math.floor(diff/1000)%60
-        countdown.textContent = `⏳ ${pad(h)}:${pad(m)}:${pad(s)}`
-      }
+    const start = new Date(card.dataset.start);
+    const diff = start - now;
+    const cd = card.querySelector(".countdown");
+    if(cd && diff > 0){
+      const h=Math.floor(diff/3600000);
+      const m=Math.floor(diff%3600000/60000);
+      const s=Math.floor(diff%60000/1000);
+      cd.textContent = `⏳ ${pad(h)}:${pad(m)}:${pad(s)}`;
     }
-
-    if(status === "live"){
-      const sec = Math.floor((now - start)/1000)
-      duration.textContent =
-        `${pad(Math.floor(sec/3600))}:${pad(Math.floor(sec/60)%60)}:${pad(sec%60)}`
-    }
-  })
+  });
 }
-
-updateMatches()
-setInterval(updateMatches,1000)
+updateTimers();
+setInterval(updateTimers,1000);
 </script>
 
 {% endblock %}
