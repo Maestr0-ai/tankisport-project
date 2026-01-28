@@ -1,89 +1,91 @@
-import requests
 from flask import Flask, render_template
-from datetime import datetime, timezone
-import os
+import requests
+from datetime import datetime
+from collections import defaultdict
 
 app = Flask(__name__)
 
-# ====== НАСТРОЙКИ ======
+# ===== НАСТРОЙКИ =====
 TOURNAMENT_ID = 842
+
 API_TOURNAMENT = f"https://tankisport.com/api/tournaments/show/{TOURNAMENT_ID}"
-API_TEAM = "https://tankisport.com/api/teams/show/{}"
+API_MATCHES = f"https://tankisport.com/api/matches?tournament={TOURNAMENT_ID}"
 
 
-# ====== ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ======
-
-def fetch_tournament():
+# ===== ВСПОМОГАТЕЛЬНЫЕ =====
+def fetch_json(url):
     try:
-        r = requests.get(API_TOURNAMENT, timeout=10)
+        r = requests.get(url, timeout=15)
         r.raise_for_status()
         return r.json()
     except Exception as e:
-        print("API error:", e)
+        print("API ERROR:", e)
         return None
 
 
-def parse_time(ts):
-    dt = datetime.fromtimestamp(ts, tz=timezone.utc)
-    return {
-        "iso": dt.isoformat(),
-        "display": dt.strftime("%d.%m.%Y %H:%M")
-    }
+def parse_datetime(dt_str):
+    return datetime.strptime(dt_str, "%Y-%m-%d %H:%M:%S")
 
 
-# ====== ГЛАВНАЯ ======
-
+# ===== ГЛАВНАЯ =====
 @app.route("/")
 def index():
     return render_template("index.html")
 
 
-# ====== МАТЧИ ======
-
+# ===== МАТЧИ =====
 @app.route("/schedule")
 def schedule():
-    data = requests.get(API_TOURNAMENT).json()
-    print("TOURNAMENT DATA:", data)
+    data = fetch_json(API_MATCHES)
     matches = []
 
-    if data:
-        for m in data.get("matches", []):
-            # только незавершённые
-            if m.get("winner") is None:
-                t = parse_time(m["date"])
-                matches.append({
-                    "team1": m["team1"]["name"],
-                    "team2": m["team2"]["name"],
-                    "time_iso": t["iso"],
-                    "time_display": t["display"]
-                })
+    if not data or "data" not in data:
+        return render_template("schedule.html", matches=[])
 
-        # сортировка по времени
-        matches.sort(key=lambda x: x["time_iso"])
+    now = datetime.utcnow()
+
+    for m in data["data"]:
+        start = parse_datetime(m["date"])
+
+        matches.append({
+            "id": m["id"],
+            "team1": m["team1"]["name"],
+            "team2": m["team2"]["name"],
+            "time_iso": start.isoformat(),
+            "time_display": start.strftime("%d.%m.%Y %H:%M"),
+            "status": m["status"],  # 0 future | 1 live | 2 finished
+        })
+
+    # LIVE сверху, потом будущие
+    matches.sort(key=lambda x: (x["status"] != 1, x["time_iso"]))
 
     return render_template("schedule.html", matches=matches)
 
 
-# ====== РЕЗУЛЬТАТЫ ======
-
+# ===== РЕЗУЛЬТАТЫ =====
 @app.route("/results")
 def results():
-    data = fetch_tournament()
-    results_by_round = {}
+    data = fetch_json(API_MATCHES)
+    results_by_round = defaultdict(list)
 
-    if data:
-        for m in data.get("matches", []):
-            if m.get("winner") is not None:
-                rnd = m.get("round", 1)
+    if not data or "data" not in data:
+        return render_template("results.html", results_by_round={})
 
-                results_by_round.setdefault(rnd, []).append({
-                    "team1": m["team1"]["name"],
-                    "team2": m["team2"]["name"],
-                    "score1": m["result1"],
-                    "score2": m["result2"]
-                })
+    for m in data["data"]:
+        if m["status"] != 2:
+            continue  # только завершённые
 
-    # сортируем раунды
+        round_id = m["connection"]["stage"]
+
+        results_by_round[round_id].append({
+            "team1": m["team1"]["name"],
+            "team2": m["team2"]["name"],
+            "score1": m["result1"],
+            "score2": m["result2"],
+            "winner": m["winner"]
+        })
+
+    # сортировка раундов
     results_by_round = dict(sorted(results_by_round.items()))
 
     return render_template(
@@ -92,68 +94,55 @@ def results():
     )
 
 
-# ====== КОМАНДЫ ======
-
+# ===== КОМАНДЫ =====
 @app.route("/teams")
 def teams():
-    data = fetch_tournament()
-    teams = []
+    data = fetch_json(API_MATCHES)
+    teams = {}
 
-    if data:
-        team_ids = set()
+    if not data or "data" not in data:
+        return render_template("teams.html", teams=[])
 
-        for m in data.get("matches", []):
-            team_ids.add(m["team1"]["id"])
-            team_ids.add(m["team2"]["id"])
+    for m in data["data"]:
+        for t in [m["team1"], m["team2"]]:
+            teams[t["id"]] = {
+                "name": t["name"],
+                "country": t["country"],
+                "rating": t["rating"],
+                "avatar": t["avatar"]
+            }
 
-        for tid in team_ids:
-            try:
-                r = requests.get(API_TEAM.format(tid), timeout=10)
-                r.raise_for_status()
-                t = r.json()
-                teams.append({
-                    "name": t["name"],
-                    "tag": t.get("tag", ""),
-                    "players": [p["nickname"] for p in t.get("players", [])]
-                })
-            except:
-                continue
-
-        teams.sort(key=lambda x: x["name"].lower())
-
-    return render_template("teams.html", teams=teams)
+    return render_template("teams.html", teams=teams.values())
 
 
-# ====== СТАТИСТИКА ======
-
+# ===== СТАТИСТИКА =====
 @app.route("/stats")
 def stats():
-    data = fetch_tournament()
+    data = fetch_json(API_MATCHES)
 
     stats = {
-        "total_matches": 0,
+        "total": 0,
         "finished": 0,
         "live": 0,
         "upcoming": 0
     }
 
-    if data:
-        for m in data.get("matches", []):
-            stats["total_matches"] += 1
+    if not data or "data" not in data:
+        return render_template("stats.html", stats=stats)
 
-            if m.get("winner") is not None:
-                stats["finished"] += 1
-            else:
-                if m["date"] * 1000 <= datetime.utcnow().timestamp() * 1000:
-                    stats["live"] += 1
-                else:
-                    stats["upcoming"] += 1
+    stats["total"] = len(data["data"])
+
+    for m in data["data"]:
+        if m["status"] == 0:
+            stats["upcoming"] += 1
+        elif m["status"] == 1:
+            stats["live"] += 1
+        elif m["status"] == 2:
+            stats["finished"] += 1
 
     return render_template("stats.html", stats=stats)
 
 
-# ====== RUN (RENDER) ======
-
+# ===== ЗАПУСК =====
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=5000)
