@@ -1,9 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Команды</h2>
 
-{% if data %}
-<pre>{{ data | tojson(indent=2) }}</pre>
+<h1>Команды</h1>
+
+{% if teams %}
+<div class="teams">
+  {% for t in teams %}
+  <div class="team-card">
+    <img src="{{ t.avatar }}" width="40">
+    <strong>{{ t.name }}</strong>
+    <span>{{ t.country }}</span>
+  </div>
+  {% endfor %}
+</div>
 {% else %}
 <p>Нет данных</p>
 {% endif %}
